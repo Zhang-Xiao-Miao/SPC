@@ -1,0 +1,41 @@
+{
+  "dataset": "mbppplus100",
+  "seed": 1,
+  "generator_backend": "hf_causal",
+  "model_name": "<HF_CACHE>/hub/models--bigcode--tiny_starcoder_py/snapshots/8547527bef0bc927268c1653cce6948c5c242dd1",
+  "device": "cuda:0",
+  "settings": {
+    "no_prior": {
+      "summary": {
+        "pass_rate": 0.19,
+        "passed": 19,
+        "num_episodes": 100,
+        "compile_ok": 20,
+        "failed": 81,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 15732,
+        "completion_tokens_total": 20000,
+        "avg_latency_sec": 0.1793569768971065
+      },
+      "result_path": "results/hf_safe_gpu_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed1.json"
+    },
+    "multi_prior": {
+      "summary": {
+        "pass_rate": 0.13,
+        "passed": 13,
+        "num_episodes": 100,
+        "compile_ok": 14,
+        "failed": 87,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 19349,
+        "completion_tokens_total": 20000,
+        "avg_latency_sec": 0.35923147553112356
+      },
+      "result_path": "results/hf_safe_gpu_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed1.json"
+    }
+  }
+}

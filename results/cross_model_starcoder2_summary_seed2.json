@@ -1,0 +1,57 @@
+{
+  "dataset": "mbppplus100",
+  "seed": 2,
+  "generator_backend": "vllm_openai",
+  "model_name": "bigcode/starcoder2-7b",
+  "device": "cuda",
+  "settings": {
+    "no_prior": {
+      "summary": {
+        "pass_rate": 0.72,
+        "passed": 72,
+        "num_episodes": 100,
+        "compile_ok": 72,
+        "failed": 28,
+        "timeout": 0,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 15733,
+        "completion_tokens_total": 19954,
+        "avg_latency_sec": 0.15237305058224593
+      },
+      "result_path": "results/vllm_starcoder2_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed2.json"
+    },
+    "single_prior": {
+      "summary": {
+        "pass_rate": 0.71,
+        "passed": 71,
+        "num_episodes": 100,
+        "compile_ok": 72,
+        "failed": 29,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 19365,
+        "completion_tokens_total": 19990,
+        "avg_latency_sec": 0.15276784229266924
+      },
+      "result_path": "results/vllm_starcoder2_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed2.json"
+    },
+    "multi_prior": {
+      "summary": {
+        "pass_rate": 0.75,
+        "passed": 75,
+        "num_episodes": 100,
+        "compile_ok": 76,
+        "failed": 25,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 19328,
+        "completion_tokens_total": 20000,
+        "avg_latency_sec": 0.29765460850670933
+      },
+      "result_path": "results/vllm_starcoder2_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed2.json"
+    }
+  }
+}

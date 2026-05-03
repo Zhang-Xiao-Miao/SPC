@@ -1,0 +1,24 @@
+# Known Limitations
+
+- The main benchmark is execution-evaluated few-shot Python function generation, not repo-level or tool-use-heavy code generation.
+- `HumanEval+` and the compatibility-filtered `BigCodeBench-Hard` slices support qualified external evidence, not broad-transfer claims; the larger modern slice is still slice-sensitive.
+- Cross-model evidence supports backend-sensitive portability, not backend invariance.
+- Cross-model seeds are symmetric for the two stronger instruction-style backends in the current artifact: Qwen uses seeds `1,2`, DeepSeek uses seeds `1,2`; Granite and StarCoder2 have additional four-replicate backend-boundary checks; the weak backend uses GPU seeds `1,2` as a negative boundary.
+- The budget-sweep figure is mechanism support on `MBPP+100`, not the headline claim benchmark.
+- `fair-budget` in this repo means matched candidate budget plus matched execution-call accounting; it does not mean prompt-token equality or full compute equality.
+- `MBR-exec` is diagnostic execution selection using packaged task tests for candidate selection and solved-count reporting; it is not a deployment-time selection claim.
+- The full `MBPP+224` prompt-only structural rerun is non-positive and should be treated as a boundary result, not hidden as a minor caveat.
+- The prior-quality audit uses `structure_fidelity`, a retrospective diagnostic metric based on reference-code structure; it is not a deployable prior-quality estimator.
+- The prior-quality response audit reports quality coverage, net delta by fidelity bin, harm rate, outcome-level fidelity separation, and threshold sensitivity; these analyses are diagnostic consistency checks, not causal proof.
+- The controlled prior-quality degradation sweep is a DeepSeek `MBPP+50` pilot, not a main-table result. It is useful as secondary diagnostic evidence but is noisy and should not be presented as causal proof.
+- Granite and StarCoder2 checks are replicate-sensitive backend boundary evidence. They do not support backend invariance or broad cross-backend claims. The pipeline seed is not passed into the vLLM OpenAI payload, so seed labels should be interpreted as stochastic replicate labels rather than deterministic generation seeds.
+- StarCoder2-7B is completion-style serving and should not be interpreted as a clean instruction-backend replication. Granite is the cleaner supplemental instruction/chat backend, but its four-replicate aggregate remains modest and noisy.
+- The prompt-only structural matcher is a fixed boundary control that uses query prompt and entry point only on the query side; it is not a new prior-construction method.
+- The reported full `MBPP+224` prompt-only structural rerun is not selected from an alternative-weight sweep, and no alternative-weight sweep is used in the canonical artifact.
+- The no-rerank directionality evidence is normalized into a `v2` paper-facing provenance table, but it remains diagnostic rather than deployable.
+- The bad-prior decomposition now uses seeds `1,2,3`; `all_compile_fail` remains the dominant regression type, but `corrupted_prior` also shows small timeout spillover in some seeds.
+- The compatibility-filtering step for `BigCodeBench-Hard` slice preparation depends on access to an upstream dataset cache; the direct review zip provides cached outputs and provenance, while live reruns require reconstructing processed slices from upstream sources.
+- The package includes current paper-facing objects, a NeurIPS LaTeX starter, and the official style file, but not final camera-ready figure files.
+- Public artifact release follows `paper/data_release_policy.md`; upstream benchmark datasets or tests are not redistributed publicly unless redistribution permission is verified.
+- Historical verifier/usefulness assets remain in the repo, but usefulness is not part of the current canonical claim set because this package does not include a dedicated paper-facing negative-result object for it.
+- The bibliography starter now covers the core manuscript buckets, but it is still intentionally selective rather than exhaustive.

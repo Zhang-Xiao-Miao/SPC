@@ -1,0 +1,57 @@
+{
+  "dataset": "mbppplus100",
+  "seed": 2,
+  "generator_backend": "vllm_openai",
+  "model_name": "ibm-granite/granite-8b-code-instruct-4k",
+  "device": "cuda",
+  "settings": {
+    "no_prior": {
+      "summary": {
+        "pass_rate": 0.74,
+        "passed": 74,
+        "num_episodes": 100,
+        "compile_ok": 75,
+        "failed": 26,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 18232,
+        "completion_tokens_total": 6666,
+        "avg_latency_sec": 0.09547110947896727
+      },
+      "result_path": "results/vllm_granite8b_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed2.json"
+    },
+    "single_prior": {
+      "summary": {
+        "pass_rate": 0.75,
+        "passed": 75,
+        "num_episodes": 100,
+        "compile_ok": 76,
+        "failed": 25,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 21864,
+        "completion_tokens_total": 6101,
+        "avg_latency_sec": 0.08882106353121344
+      },
+      "result_path": "results/vllm_granite8b_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed2.json"
+    },
+    "multi_prior": {
+      "summary": {
+        "pass_rate": 0.75,
+        "passed": 75,
+        "num_episodes": 100,
+        "compile_ok": 76,
+        "failed": 25,
+        "timeout": 1,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 21856,
+        "completion_tokens_total": 6273,
+        "avg_latency_sec": 0.15156301525305024
+      },
+      "result_path": "results/vllm_granite8b_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed2.json"
+    }
+  }
+}

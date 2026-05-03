@@ -1,0 +1,36 @@
+{
+  "dataset": "humanevalplus50",
+  "candidate_budget": 8,
+  "seed": 1,
+  "settings": {
+    "no_prior": {
+      "pass_rate": 0.84,
+      "passed": 42,
+      "num_episodes": 50,
+      "compile_ok": 43,
+      "failed": 8,
+      "timeout": 1,
+      "candidate_budget_total": 400,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 14861,
+      "completion_tokens_total": 6702,
+      "avg_latency_sec": 0.15120786834857428,
+      "result_path": "results/humanevalplus50_deepseek_syntax_aware_no_prior_mbrexec_budget8_seed1.json"
+    },
+    "multi_prior": {
+      "pass_rate": 0.88,
+      "passed": 44,
+      "num_episodes": 50,
+      "compile_ok": 45,
+      "failed": 6,
+      "timeout": 1,
+      "candidate_budget_total": 400,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 16848,
+      "completion_tokens_total": 6788,
+      "avg_latency_sec": 0.26695285105844957,
+      "result_path": "results/humanevalplus50_deepseek_syntax_aware_multi_prior_mbrexec_budget8_seed1.json"
+    }
+  },
+  "note": "Using locally available HumanEval+ slice as external fallback because LiveCodeBench/BigCodeBench data are not present in the workspace."
+}

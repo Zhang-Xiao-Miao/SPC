@@ -1,0 +1,67 @@
+{
+  "config": {
+    "random_state": 1,
+    "include_smoke": false
+  },
+  "train_runs": [
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed1.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed2.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_single_prior_mbrexec_budget8_seed1.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_single_prior_mbrexec_budget8_seed2.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_multi_prior_mbrexec_budget8_seed1.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_multi_prior_mbrexec_budget8_seed2.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_random_prior_mbrexec_budget8_seed1.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_corrupted_prior_mbrexec_budget8_seed1.json"
+  ],
+  "dev_runs": [
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed3.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_single_prior_mbrexec_budget8_seed3.json",
+    "results/mbpp224_fair_budget/mbppplus224_syntax_aware_multi_prior_mbrexec_budget8_seed3.json"
+  ],
+  "eval_examples": "data/processed/evalplus/mbppplus_test.jsonl",
+  "model_out": "models/plan_b_learned_verifier_full224.pkl",
+  "num_train_rows": 14336,
+  "num_dev_rows": 5376,
+  "feature_names": [
+    "candidate_index",
+    "has_prior",
+    "is_multi_prior",
+    "source_is_retrieval_edit",
+    "parse_ok",
+    "function_name_ok",
+    "arity_ok",
+    "return_type_ok",
+    "smoke_passed",
+    "smoke_status",
+    "compile_ok",
+    "exec_timeout",
+    "prompt_tokens",
+    "completion_tokens",
+    "latency_sec",
+    "structure_fidelity",
+    "mean_entropy",
+    "mean_retrieval",
+    "max_prior_score",
+    "num_supports",
+    "num_candidates",
+    "retrieval_score_mean",
+    "code_num_lines",
+    "code_num_chars",
+    "code_has_return"
+  ],
+  "include_smoke": false,
+  "train_metrics": {
+    "num_rows": 14336.0,
+    "positive_rate": 0.7267717633928571,
+    "accuracy": 1.0,
+    "average_precision": 1.0,
+    "roc_auc": 1.0
+  },
+  "dev_metrics": {
+    "num_rows": 5376.0,
+    "positive_rate": 0.7364211309523809,
+    "accuracy": 1.0,
+    "average_precision": 1.0,
+    "roc_auc": 1.0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "dataset": "mbppplus100",
+  "seed": 2,
+  "generator_backend": "vllm_openai",
+  "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "device": "cpu",
+  "settings": {
+    "no_prior": {
+      "summary": {
+        "pass_rate": 0.77,
+        "passed": 77,
+        "num_episodes": 100,
+        "compile_ok": 77,
+        "failed": 23,
+        "timeout": 0,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 19766,
+        "completion_tokens_total": 11255,
+        "avg_latency_sec": 0.13396588707633783
+      },
+      "result_path": "results/vllm_deepseek_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed2.json"
+    },
+    "single_prior": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 78,
+        "num_episodes": 100,
+        "compile_ok": 78,
+        "failed": 22,
+        "timeout": 0,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 23427,
+        "completion_tokens_total": 11408,
+        "avg_latency_sec": 0.1427241341129411
+      },
+      "result_path": "results/vllm_deepseek_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed2.json"
+    },
+    "multi_prior": {
+      "summary": {
+        "pass_rate": 0.79,
+        "passed": 79,
+        "num_episodes": 100,
+        "compile_ok": 79,
+        "failed": 21,
+        "timeout": 0,
+        "candidate_budget_total": 800,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 23391,
+        "completion_tokens_total": 11297,
+        "avg_latency_sec": 0.22910757972160353
+      },
+      "result_path": "results/vllm_deepseek_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed2.json"
+    }
+  }
+}

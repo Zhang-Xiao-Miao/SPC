@@ -1,0 +1,38 @@
+{
+  "dataset": "humanevalplus50",
+  "candidate_budget": 8,
+  "seed": 2,
+  "generator_backend": "vllm_openai",
+  "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "settings": {
+    "no_prior": {
+      "pass_rate": 0.88,
+      "passed": 44,
+      "num_episodes": 50,
+      "compile_ok": 45,
+      "failed": 6,
+      "timeout": 1,
+      "candidate_budget_total": 400,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 14861,
+      "completion_tokens_total": 6773,
+      "avg_latency_sec": 0.22146249522804282,
+      "result_path": "results/humanevalplus50_deepseek_syntax_aware_no_prior_mbrexec_budget8_seed2.json"
+    },
+    "multi_prior": {
+      "pass_rate": 0.82,
+      "passed": 41,
+      "num_episodes": 50,
+      "compile_ok": 41,
+      "failed": 9,
+      "timeout": 0,
+      "candidate_budget_total": 400,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 16849,
+      "completion_tokens_total": 6812,
+      "avg_latency_sec": 0.3658664282527752,
+      "result_path": "results/humanevalplus50_deepseek_syntax_aware_multi_prior_mbrexec_budget8_seed2.json"
+    }
+  },
+  "note": "Using locally available HumanEval+ slice as external fallback because LiveCodeBench/BigCodeBench data are not present in the workspace."
+}

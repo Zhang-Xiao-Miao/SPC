@@ -1,0 +1,311 @@
+{
+  "dataset": "MBPP+100 first slice",
+  "max_episodes": 50,
+  "candidate_budget": 8,
+  "seed": 1,
+  "generator_backend": "vllm_openai",
+  "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "settings": {
+    "no_prior": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 9692,
+        "completion_tokens_total": 5389,
+        "avg_latency_sec": 0.13121497389278375
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.35,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.0,
+        "high_fidelity_coverage": 0.0
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_no_prior_mbrexec_budget8_seed1_n50.json"
+    },
+    "intended_multi": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11565,
+        "completion_tokens_total": 5470,
+        "avg_latency_sec": 0.2234569986187853
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.365,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.1818888888888889,
+        "high_fidelity_coverage": 0.1
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_intended_multi_mbrexec_budget8_seed1_n50.json"
+    },
+    "drop_api_tags": {
+      "summary": {
+        "pass_rate": 0.8,
+        "passed": 40,
+        "num_episodes": 50,
+        "compile_ok": 40,
+        "failed": 10,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11278,
+        "completion_tokens_total": 5443,
+        "avg_latency_sec": 0.2210937535716221
+      },
+      "paired_vs_no_prior": {
+        "improved": 2,
+        "regressed": 1,
+        "unchanged": 47,
+        "net": 1,
+        "harm_rate": 0.3333333333333333
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.3625,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.2,
+        "mean_structure_fidelity": 0.10555555555555556,
+        "high_fidelity_coverage": 0.06
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_drop_api_tags_mbrexec_budget8_seed1_n50.json"
+    },
+    "drop_control_flow_tags": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11340,
+        "completion_tokens_total": 5605,
+        "avg_latency_sec": 0.22527520285919309
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.37,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.12299999999999998,
+        "high_fidelity_coverage": 0.08
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_drop_control_flow_tags_mbrexec_budget8_seed1_n50.json"
+    },
+    "drop_data_structure_tags": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 40,
+        "failed": 11,
+        "timeout": 1,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11454,
+        "completion_tokens_total": 5801,
+        "avg_latency_sec": 0.2399620942864567
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.3525,
+        "selected_timeout_rate": 0.02,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.13855555555555554,
+        "high_fidelity_coverage": 0.04
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_drop_data_structure_tags_mbrexec_budget8_seed1_n50.json"
+    },
+    "replace_25": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11557,
+        "completion_tokens_total": 5399,
+        "avg_latency_sec": 0.21948583001969382
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.37,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.09133333333333332,
+        "high_fidelity_coverage": 0.02
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_replace_25_mbrexec_budget8_seed1_n50.json"
+    },
+    "replace_50": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11541,
+        "completion_tokens_total": 5654,
+        "avg_latency_sec": 0.2327955873310566
+      },
+      "paired_vs_no_prior": {
+        "improved": 1,
+        "regressed": 1,
+        "unchanged": 48,
+        "net": 0,
+        "harm_rate": 0.5
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.3575,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.09133333333333332,
+        "high_fidelity_coverage": 0.02
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_replace_50_mbrexec_budget8_seed1_n50.json"
+    },
+    "replace_75": {
+      "summary": {
+        "pass_rate": 0.78,
+        "passed": 39,
+        "num_episodes": 50,
+        "compile_ok": 39,
+        "failed": 11,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 11557,
+        "completion_tokens_total": 5719,
+        "avg_latency_sec": 0.2308202191372402
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 0,
+        "unchanged": 50,
+        "net": 0,
+        "harm_rate": null
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.3775,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.22,
+        "mean_structure_fidelity": 0.09133333333333332,
+        "high_fidelity_coverage": 0.02
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_replace_75_mbrexec_budget8_seed1_n50.json"
+    },
+    "random_prior": {
+      "summary": {
+        "pass_rate": 0.74,
+        "passed": 37,
+        "num_episodes": 50,
+        "compile_ok": 37,
+        "failed": 13,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 14765,
+        "completion_tokens_total": 6102,
+        "avg_latency_sec": 0.1485970785561949
+      },
+      "paired_vs_no_prior": {
+        "improved": 0,
+        "regressed": 2,
+        "unchanged": 48,
+        "net": -2,
+        "harm_rate": 1.0
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.4475,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.26,
+        "mean_structure_fidelity": 0.04777777777777778,
+        "high_fidelity_coverage": 0.0
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_random_prior_mbrexec_budget8_seed1_n50.json"
+    },
+    "corrupted_prior": {
+      "summary": {
+        "pass_rate": 0.8,
+        "passed": 40,
+        "num_episodes": 50,
+        "compile_ok": 40,
+        "failed": 10,
+        "timeout": 0,
+        "candidate_budget_total": 400,
+        "avg_candidates_per_episode": 8.0,
+        "prompt_tokens_total": 14750,
+        "completion_tokens_total": 6067,
+        "avg_latency_sec": 0.14501864045509139
+      },
+      "paired_vs_no_prior": {
+        "improved": 1,
+        "regressed": 0,
+        "unchanged": 49,
+        "net": 1,
+        "harm_rate": 0.0
+      },
+      "diagnostics": {
+        "all_candidate_compile_fail_rate": 0.3875,
+        "selected_timeout_rate": 0.0,
+        "selected_fail_rate": 0.2,
+        "mean_structure_fidelity": 0.28888888888888886,
+        "high_fidelity_coverage": 0.14
+      },
+      "result_path": "results/degradation_sweep/mbppplus50_deepseek_degradation_syntax_aware_corrupted_prior_mbrexec_budget8_seed1_n50.json"
+    }
+  },
+  "boundary": "Controlled degradation sweep over a fixed MBPP+ slice; diagnostic evidence, not causal proof."
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Replicate-sensitive backend boundary checks on MBPP+100",
+  "protocol": {
+    "dataset": "MBPP+100",
+    "episodes": "data/episodes/mbppplus_test100_episodes.jsonl",
+    "retrieval": "fixed code-aware syntax_aware",
+    "candidate_budget": 8,
+    "gate_mode": "none",
+    "rerank": "mbr_exec",
+    "temperature": 0.4,
+    "max_new_tokens": 200,
+    "timeout": 8,
+    "seed_policy": "Pipeline seed labels are stochastic replicate labels because the seed is not passed into the vLLM OpenAI payload."
+  },
+  "rows": [
+    {
+      "backend": "Granite 8B code instruct",
+      "model": "ibm-granite/granite-8b-code-instruct-4k",
+      "serving": "vLLM OpenAI chat API",
+      "replicates": 4,
+      "no_prior_solved": 296,
+      "multi_prior_solved": 303,
+      "total_episode_replicates": 400,
+      "solved_delta": 7,
+      "candidate_pass_no_prior": 1958,
+      "candidate_pass_multi_prior": 2005,
+      "candidate_pass_total": 3200,
+      "candidate_pass_delta": 47,
+      "paired_improved": 12,
+      "paired_regressed": 5,
+      "paired_unchanged": 383,
+      "role": "Cleaner non-Qwen/non-DeepSeek instruct backend; modest-positive but noisy.",
+      "boundary": "Replicate-sensitive backend boundary evidence, not backend invariance or broad cross-backend claims."
+    },
+    {
+      "backend": "StarCoder2-7B",
+      "model": "bigcode/starcoder2-7b",
+      "serving": "vLLM OpenAI completions",
+      "replicates": 4,
+      "no_prior_solved": 282,
+      "multi_prior_solved": 300,
+      "total_episode_replicates": 400,
+      "solved_delta": 18,
+      "candidate_pass_no_prior": 1668,
+      "candidate_pass_multi_prior": 1727,
+      "candidate_pass_total": 3200,
+      "candidate_pass_delta": 59,
+      "paired_improved": 29,
+      "paired_regressed": 11,
+      "paired_unchanged": 360,
+      "role": "Completion-style serving boundary; positive after more replicates but prompt/backend mismatch remains.",
+      "boundary": "Serving-format boundary evidence, not a clean instruction-backend replication."
+    }
+  ]
+}

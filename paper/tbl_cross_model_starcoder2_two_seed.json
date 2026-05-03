@@ -1,0 +1,33 @@
+{
+  "backend": "vllm_openai completions / bigcode/starcoder2-7b",
+  "dataset": "MBPP+100",
+  "seeds": [1, 2],
+  "result_paths": {
+    "seed1": {
+      "no_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed1.json",
+      "single_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed1.json",
+      "multi_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed1.json"
+    },
+    "seed2": {
+      "no_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed2.json",
+      "single_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed2.json",
+      "multi_prior": "results/vllm_starcoder2_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed2.json"
+    }
+  },
+  "seed_results": [
+    {"seed": 1, "no_prior": 74, "single_prior": 72, "multi_prior": 72, "multi_prior_delta": -2},
+    {"seed": 2, "no_prior": 72, "single_prior": 71, "multi_prior": 75, "multi_prior_delta": 3}
+  ],
+  "aggregate": {
+    "no_prior_mean": 73.0,
+    "no_prior_std": 1.4142135623730951,
+    "single_prior_mean": 71.5,
+    "single_prior_std": 0.7071067811865476,
+    "multi_prior_mean": 73.5,
+    "multi_prior_std": 2.1213203435596424,
+    "multi_prior_improved": 9,
+    "multi_prior_regressed": 8,
+    "multi_prior_unchanged": 183
+  },
+  "interpretation": "Original two-replicate StarCoder2-7B boundary evidence; useful for backend sensitivity, with the four-replicate update reported in paper/tbl_backend_replicate_boundary.md. The serving-format caveat remains."
+}

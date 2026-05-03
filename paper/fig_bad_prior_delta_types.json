@@ -1,0 +1,1074 @@
+{
+  "baseline_template": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed{seed}.json",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "comparisons": {
+    "random_prior": {
+      "seeds": [
+        {
+          "seed": 1,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed1.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_random_prior_mbrexec_budget8_seed1.json",
+          "improved_count": 9,
+          "regressed_count": 15,
+          "unchanged_count": 200,
+          "regression_breakdown": {
+            "all_compile_fail": 15
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_67",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_108",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_145",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_233",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_245",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_259",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_264",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_282",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_283",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_285",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_397",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_418",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_453",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_473",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_475",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            }
+          ]
+        },
+        {
+          "seed": 2,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed2.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_random_prior_mbrexec_budget8_seed2.json",
+          "improved_count": 8,
+          "regressed_count": 15,
+          "unchanged_count": 201,
+          "regression_breakdown": {
+            "all_compile_fail": 13,
+            "other_execution_failure": 2
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_57",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_61",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_67",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_79",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_101",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_123",
+              "failure_type": "other_execution_failure",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_142",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_145",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_239",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_252",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_388",
+              "failure_type": "other_execution_failure",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_389",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_410",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_437",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_440",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed3.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_random_prior_mbrexec_budget8_seed3.json",
+          "improved_count": 8,
+          "regressed_count": 14,
+          "unchanged_count": 202,
+          "regression_breakdown": {
+            "all_compile_fail": 14
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_62",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_101",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_106",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_140",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_145",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_239",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_245",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_256",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_285",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_410",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_437",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_446",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_471",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            },
+            {
+              "query_id": "mbppplus_478",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "random_1"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregate": {
+        "num_seeds": 3,
+        "improved_mean": 8.333333333333334,
+        "improved_std": 0.5773502691896257,
+        "regressed_mean": 14.666666666666666,
+        "regressed_std": 0.5773502691896257,
+        "unchanged_mean": 201.0,
+        "unchanged_std": 1.0,
+        "all_compile_fail_mean": 14.0,
+        "all_compile_fail_std": 1.0,
+        "compiled_but_failed_tests_mean": 0.0,
+        "compiled_but_failed_tests_std": 0.0,
+        "best_timeout_mean": 0.0,
+        "best_timeout_std": 0.0,
+        "rerank_miss_mean": 0.0,
+        "rerank_miss_std": 0.0
+      }
+    },
+    "corrupted_prior": {
+      "seeds": [
+        {
+          "seed": 1,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed1.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_corrupted_prior_mbrexec_budget8_seed1.json",
+          "improved_count": 10,
+          "regressed_count": 17,
+          "unchanged_count": 197,
+          "regression_breakdown": {
+            "all_compile_fail": 17
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_61",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_67",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_108",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_145",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_233",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_245",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_264",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_280",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_283",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_285",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_308",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_397",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_418",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_437",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_440",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_473",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_475",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            }
+          ]
+        },
+        {
+          "seed": 2,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed2.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_corrupted_prior_mbrexec_budget8_seed2.json",
+          "improved_count": 12,
+          "regressed_count": 16,
+          "unchanged_count": 196,
+          "regression_breakdown": {
+            "all_compile_fail": 15,
+            "best_timeout": 1
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_61",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_67",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_79",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_101",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_106",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_123",
+              "failure_type": "best_timeout",
+              "baseline_compile_ok": true,
+              "target_compile_ok": true,
+              "target_exec_status": "timeout",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_245",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_252",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_292",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_388",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_389",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_410",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_437",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_440",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_446",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_460",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            }
+          ]
+        },
+        {
+          "seed": 3,
+          "baseline_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed3.json",
+          "target_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_corrupted_prior_mbrexec_budget8_seed3.json",
+          "improved_count": 12,
+          "regressed_count": 17,
+          "unchanged_count": 195,
+          "regression_breakdown": {
+            "all_compile_fail": 15,
+            "best_timeout": 1,
+            "other_execution_failure": 1
+          },
+          "regressed_queries": [
+            {
+              "query_id": "mbppplus_62",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_90",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_145",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_224",
+              "failure_type": "best_timeout",
+              "baseline_compile_ok": true,
+              "target_compile_ok": true,
+              "target_exec_status": "timeout",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_239",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_256",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_259",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_285",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_292",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_410",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_418",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_437",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_446",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_465",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_471",
+              "failure_type": "other_execution_failure",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_473",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            },
+            {
+              "query_id": "mbppplus_478",
+              "failure_type": "all_compile_fail",
+              "baseline_compile_ok": true,
+              "target_compile_ok": false,
+              "target_exec_status": "failed",
+              "target_prior_names": [
+                "corrupted"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregate": {
+        "num_seeds": 3,
+        "improved_mean": 11.333333333333334,
+        "improved_std": 1.1547005383792517,
+        "regressed_mean": 16.666666666666668,
+        "regressed_std": 0.5773502691896258,
+        "unchanged_mean": 196.0,
+        "unchanged_std": 1.0,
+        "all_compile_fail_mean": 15.666666666666666,
+        "all_compile_fail_std": 1.1547005383792517,
+        "compiled_but_failed_tests_mean": 0.0,
+        "compiled_but_failed_tests_std": 0.0,
+        "best_timeout_mean": 0.6666666666666666,
+        "best_timeout_std": 0.5773502691896258,
+        "rerank_miss_mean": 0.0,
+        "rerank_miss_std": 0.0
+      }
+    }
+  }
+}

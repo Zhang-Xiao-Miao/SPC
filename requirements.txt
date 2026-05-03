@@ -1,0 +1,12 @@
+# Reviewer quickstart requirements.
+#
+# The cached-output quickstart uses Python 3.10+ standard-library modules and the
+# packaged repository modules only. No GPU, API key, network access, live LLM
+# endpoint, or generated-code execution is required for:
+#
+#   bash artifact/reproduce_main.sh
+#   bash artifact/verify_provenance.sh
+#
+# Optional live reruns require additional packages such as vllm, openai,
+# transformers, torch, datasets, scikit-learn, and PyYAML, plus prepared upstream
+# benchmark assets and a sandbox for generated-code execution.

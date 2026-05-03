@@ -1,0 +1,2 @@
+"""Confidence gating utilities."""
+

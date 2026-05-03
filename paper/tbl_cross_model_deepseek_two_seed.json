@@ -1,0 +1,26 @@
+{
+  "backend": "vllm_openai / deepseek-coder-6.7b-instruct",
+  "dataset": "MBPP+100",
+  "protocol": "fair-budget, budget=8",
+  "runs": [
+    {
+      "seed": 1,
+      "baseline_path": "results/vllm_deepseek_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed1.json",
+      "single_prior_path": "results/vllm_deepseek_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed1.json",
+      "multi_prior_path": "results/vllm_deepseek_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed1.json",
+      "baseline_passed": 77,
+      "single_prior_passed": 77,
+      "multi_prior_passed": 78
+    },
+    {
+      "seed": 2,
+      "baseline_path": "results/vllm_deepseek_mbppplus100_syntax_aware_no_prior_mbrexec_budget8_seed2.json",
+      "single_prior_path": "results/vllm_deepseek_mbppplus100_syntax_aware_single_prior_mbrexec_budget8_seed2.json",
+      "multi_prior_path": "results/vllm_deepseek_mbppplus100_syntax_aware_multi_prior_mbrexec_budget8_seed2.json",
+      "baseline_passed": 77,
+      "single_prior_passed": 78,
+      "multi_prior_passed": 79
+    }
+  ],
+  "takeaway": "The DeepSeek same-scale backend shows a modest positive structure effect on both tested seeds, supporting qualified same-scale portability."
+}

@@ -1,0 +1,4759 @@
+{
+  "runs": [
+    {
+      "run_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_no_prior_mbrexec_budget8_seed3.json",
+      "counts": {
+        "original_mbr": 178,
+        "guardrails_only": 161,
+        "guardrails_smoke_mbr": 162,
+        "guardrails_smoke_mbr_verifier": 178
+      },
+      "metrics": {
+        "original_mbr": 0.7946428571428571,
+        "guardrails_only": 0.71875,
+        "guardrails_smoke_mbr": 0.7232142857142857,
+        "guardrails_smoke_mbr_verifier": 0.7946428571428571
+      },
+      "details": [
+        {
+          "query_id": "mbppplus_11",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_12",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_14",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_16",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_17",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_18",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_19",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_20",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_56",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_57",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_58",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_59",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_61",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_62",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_63",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_64",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_65",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_66",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_67",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_68",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_69",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_70",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_71",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_72",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_74",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_75",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_77",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_79",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_80",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_82",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_84",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_85",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_86",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_87",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_88",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_89",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_90",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_91",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_92",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_93",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_94",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_95",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_96",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_97",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_98",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_99",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_100",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_101",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_102",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_103",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_104",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_105",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_106",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_108",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_109",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_111",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_113",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_116",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_118",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_119",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_120",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_123",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_124",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_125",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_126",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_127",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_128",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_129",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_130",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_131",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_132",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_133",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_135",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_137",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_138",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_139",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_140",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_141",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_142",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_145",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_160",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_161",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_162",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_165",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_166",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_167",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_168",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_170",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_171",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_172",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_222",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_223",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_224",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_226",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_227",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_230",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_232",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_233",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_234",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_235",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_237",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_238",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_239",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_240",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_242",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_244",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_245",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_247",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_250",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_251",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_252",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_253",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_255",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_256",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_257",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_259",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_260",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_261",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_262",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_264",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_265",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_266",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_267",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_268",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_269",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_270",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_271",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_272",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_273",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_274",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_276",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_277",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_278",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_279",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_280",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_281",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_282",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_283",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_284",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_285",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_286",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_287",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_290",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_292",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_293",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_294",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_296",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_297",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_299",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_300",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_301",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_305",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_306",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_308",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_309",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_310",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_311",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_312",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_388",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_389",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_390",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_391",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_392",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_394",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_395",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_397",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_398",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_404",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_405",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_406",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_409",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_410",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_412",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_413",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_414",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_415",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_418",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_419",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_420",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_421",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_422",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_424",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_425",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_426",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_427",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_428",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_429",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_430",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_432",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_433",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_435",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_436",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_437",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_439",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_440",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_441",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_445",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_446",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_447",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_448",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_450",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_451",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_453",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_454",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_455",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_456",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_457",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_458",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_459",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_460",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_462",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_463",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_465",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_468",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_470",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_471",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_472",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_473",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_474",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_475",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_476",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_477",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_478",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_479",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        }
+      ]
+    },
+    {
+      "run_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_single_prior_mbrexec_budget8_seed3.json",
+      "counts": {
+        "original_mbr": 183,
+        "guardrails_only": 165,
+        "guardrails_smoke_mbr": 168,
+        "guardrails_smoke_mbr_verifier": 182
+      },
+      "metrics": {
+        "original_mbr": 0.8169642857142857,
+        "guardrails_only": 0.7366071428571429,
+        "guardrails_smoke_mbr": 0.75,
+        "guardrails_smoke_mbr_verifier": 0.8125
+      },
+      "details": [
+        {
+          "query_id": "mbppplus_11",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_12",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_14",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_16",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_17",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_18",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_19",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_20",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_56",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_57",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_58",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_59",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_61",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_62",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_63",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_64",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_65",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_66",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_67",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_68",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_69",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_70",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_71",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_72",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_74",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_75",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_77",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_79",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_80",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_82",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_84",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_85",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_86",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_87",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_88",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_89",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_90",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_91",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_92",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_93",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_94",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_95",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_96",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_97",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_98",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_99",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_100",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_101",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_102",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_103",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_104",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_105",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_106",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_108",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_109",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_111",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_113",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_116",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_118",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_119",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_120",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_123",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_124",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_125",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_126",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_127",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_128",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_129",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_130",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_131",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_132",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_133",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_135",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_137",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_138",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_139",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_140",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_141",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_142",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_145",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_160",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_161",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_162",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_165",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_166",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_167",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_168",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_170",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_171",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_172",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_222",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_223",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_224",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_226",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_227",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_230",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_232",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_233",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_234",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_235",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_237",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_238",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_239",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_240",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_242",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_244",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_245",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_247",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_250",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_251",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_252",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_253",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_255",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_256",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_257",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_259",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_260",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_261",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_262",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_264",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_265",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_266",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_267",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_268",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_269",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_270",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_271",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_272",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_273",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_274",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_276",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_277",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_278",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_279",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_280",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_281",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_282",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_283",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_284",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_285",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_286",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_287",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_290",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_292",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_293",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_294",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_296",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_297",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_299",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_300",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_301",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_305",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_306",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_308",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_309",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_310",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_311",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_312",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_388",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_389",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_390",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_391",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_392",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_394",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_395",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_397",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_398",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_404",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_405",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_406",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_409",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_410",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_412",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_413",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_414",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_415",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_418",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_419",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_420",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_421",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_422",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_424",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_425",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_426",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_427",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_428",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_429",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_430",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_432",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_433",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_435",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_436",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_437",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_439",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_440",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_441",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_445",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_446",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_447",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_448",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_450",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_451",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_453",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_454",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_455",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_456",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_457",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_458",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_459",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_460",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_462",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_463",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_465",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_468",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_470",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_471",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_472",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_473",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_474",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_475",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_476",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_477",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_478",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_479",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        }
+      ]
+    },
+    {
+      "run_path": "results/mbpp224_fair_budget/mbppplus224_syntax_aware_multi_prior_mbrexec_budget8_seed3.json",
+      "counts": {
+        "original_mbr": 187,
+        "guardrails_only": 161,
+        "guardrails_smoke_mbr": 162,
+        "guardrails_smoke_mbr_verifier": 186
+      },
+      "metrics": {
+        "original_mbr": 0.8348214285714286,
+        "guardrails_only": 0.71875,
+        "guardrails_smoke_mbr": 0.7232142857142857,
+        "guardrails_smoke_mbr_verifier": 0.8303571428571429
+      },
+      "details": [
+        {
+          "query_id": "mbppplus_11",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_12",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_14",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_16",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_17",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_18",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_19",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_20",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_56",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_57",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_58",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_59",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_61",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_62",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_63",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_64",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_65",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_66",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_67",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_68",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_69",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_70",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_71",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_72",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_74",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_75",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_77",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_79",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_80",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_82",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_84",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_85",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_86",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_87",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_88",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_89",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_90",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_91",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_92",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_93",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_94",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_95",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_96",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_97",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_98",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_99",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_100",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_101",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_102",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_103",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_104",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_105",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_106",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_108",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_109",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_111",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_113",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_116",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_118",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_119",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_120",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_123",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_124",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_125",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_126",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_127",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_128",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_129",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_130",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_131",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_132",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_133",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_135",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_137",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_138",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_139",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_140",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_141",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_142",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_145",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_160",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_161",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_162",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_165",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_166",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_167",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_168",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_170",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_171",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_172",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_222",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_223",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_224",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_226",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_227",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_230",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_232",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_233",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_234",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_235",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_237",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_238",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_239",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_240",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_242",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_244",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_245",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_247",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_250",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_251",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_252",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_253",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_255",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_256",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_257",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_259",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_260",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_261",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_262",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_264",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_265",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_266",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_267",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_268",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_269",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_270",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_271",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_272",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_273",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_274",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_276",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_277",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_278",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_279",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_280",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_281",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_282",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_283",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_284",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_285",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_286",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_287",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_290",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_292",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_293",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_294",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_296",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_297",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_299",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_300",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_301",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_305",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_306",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_308",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_309",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_310",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_311",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_312",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_388",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_389",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_390",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_391",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_392",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_394",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_395",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_397",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_398",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_404",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_405",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_406",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_409",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_410",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_412",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_413",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_414",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_415",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_418",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_419",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_420",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_421",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_422",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_424",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_425",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_426",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_427",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_428",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_429",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_430",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_432",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_433",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_435",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_436",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_437",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_439",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_440",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_441",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_445",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_446",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_447",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_448",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_450",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_451",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_453",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_454",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_455",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_456",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_457",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_458",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_459",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_460",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_462",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_463",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_465",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_468",
+          "original_passed": false,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": false
+        },
+        {
+          "query_id": "mbppplus_470",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_471",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_472",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_473",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_474",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_475",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_476",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_477",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_478",
+          "original_passed": true,
+          "guardrails_only_passed": true,
+          "guardrails_smoke_mbr_passed": true,
+          "guardrails_smoke_mbr_verifier_passed": true
+        },
+        {
+          "query_id": "mbppplus_479",
+          "original_passed": true,
+          "guardrails_only_passed": false,
+          "guardrails_smoke_mbr_passed": false,
+          "guardrails_smoke_mbr_verifier_passed": true
+        }
+      ]
+    }
+  ]
+}

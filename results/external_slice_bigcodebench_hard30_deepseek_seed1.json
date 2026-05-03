@@ -1,0 +1,38 @@
+{
+  "dataset": "bigcodebench_hard_compatible30",
+  "candidate_budget": 8,
+  "seed": 1,
+  "generator_backend": "vllm_openai",
+  "model_name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "settings": {
+    "no_prior": {
+      "pass_rate": 0.4666666666666667,
+      "passed": 14,
+      "num_episodes": 30,
+      "compile_ok": 21,
+      "failed": 16,
+      "timeout": 7,
+      "candidate_budget_total": 240,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 10446,
+      "completion_tokens_total": 5998,
+      "avg_latency_sec": 0.1842703604430426,
+      "result_path": "results/bigcodebench_hard30_deepseek_syntax_aware_no_prior_mbrexec_budget8_seed1.json"
+    },
+    "multi_prior": {
+      "pass_rate": 0.36666666666666664,
+      "passed": 11,
+      "num_episodes": 30,
+      "compile_ok": 19,
+      "failed": 19,
+      "timeout": 8,
+      "candidate_budget_total": 240,
+      "avg_candidates_per_episode": 8.0,
+      "prompt_tokens_total": 11621,
+      "completion_tokens_total": 5995,
+      "avg_latency_sec": 0.34395166201672206,
+      "result_path": "results/bigcodebench_hard30_deepseek_syntax_aware_multi_prior_mbrexec_budget8_seed1.json"
+    }
+  },
+  "note": "Compatibility-filtered BigCodeBench-Hard slice using only tasks whose declared dependency roots are importable in the current environment."
+}
