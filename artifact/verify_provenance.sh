@@ -3,8 +3,12 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 export PYTHONDONTWRITEBYTECODE=1
+export PYTHONNOUSERSITE=1
+export PYTHONPATH="$PWD"
+PYTHON_BIN="${PYTHON:-python}"
+PYTHON_SAFE=("$PYTHON_BIN" "-S")
 
-python - <<'PY'
+"${PYTHON_SAFE[@]}" - <<'PY'
 from pathlib import Path
 
 source = Path("retrieval/prompt_structural.py").read_text()
@@ -25,7 +29,7 @@ print("[PASS] prompt_structural matcher constants verified")
 print("[PASS] query-side prompt-only access boundary verified")
 PY
 
-python - <<'PY'
+"${PYTHON_SAFE[@]}" - <<'PY'
 from plan_b.io_utils import read_json
 
 paths = [
@@ -40,7 +44,7 @@ for path in paths:
 print("[PASS] raw structure_fidelity fields verified")
 PY
 
-python scripts/67_make_prior_quality_audit.py
+"${PYTHON_SAFE[@]}" scripts/67_make_prior_quality_audit.py
 test -s paper/tbl_prior_quality_response.md
 test -s paper/fig_prior_quality_response.md
 printf '[PASS] prior-quality response regenerated from cached outputs\n'

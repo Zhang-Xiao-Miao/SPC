@@ -5,8 +5,22 @@
 # endpoint, or generated-code execution is required for:
 #
 #   bash artifact/reproduce_main.sh
+#   bash artifact/reviewer_audit.sh
 #   bash artifact/verify_provenance.sh
 #
 # Optional live reruns require additional packages such as vllm, openai,
 # transformers, torch, datasets, scikit-learn, and PyYAML, plus prepared upstream
 # benchmark assets and a sandbox for generated-code execution.
+#
+# Optional local code-path smoke test:
+#
+#   bash artifact/run_smoke_test.sh
+#   python scripts/71_run_pipeline_smoke_test.py   # Windows/no bash
+#
+# This uses the real pipeline on a synthetic one-task fixture. It does not call an
+# LLM, but it imports the live-generation module and executes generated toy Python
+# through the sandbox runner.
+#
+# Python's resource module is Unix-only. The current sandbox runner treats it as
+# optional: Linux/WSL/macOS use POSIX resource limits, while Windows smoke tests
+# use subprocess timeout.

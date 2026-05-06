@@ -6,6 +6,8 @@ Use only the following paper-facing objects when writing the manuscript or citin
 
 - `README.md`
 - `requirements.txt`
+- `requirements-review.txt`
+- `requirements-live.txt`
 - `LICENSE_REVIEW_ONLY.md`
 - `paper/title.md`
 - `paper/abstract_v2.md`
@@ -67,17 +69,21 @@ Use only the following paper-facing objects when writing the manuscript or citin
 - `paper/fig_bad_prior_delta_types.md`
 - `paper/fig_bad_prior_delta_types.json`
 - `paper/bad_prior_failure_breakdown.md`
-- `paper/latex/README.md`
-- `paper/latex/main.tex`
-- `paper/latex/main.pdf`
-- `paper/latex/neurips_2026.sty`
+- `neurips2026_ed_latex_source_FINAL_v2/README_SOURCE.md`
+- `neurips2026_ed_latex_source_FINAL_v2/paper.tex`
+- `neurips2026_ed_latex_source_FINAL_v2/checklist_filled.tex`
+- `neurips2026_ed_latex_source_FINAL_v2/references.bib`
+- `neurips2026_ed_latex_source_FINAL_v2/neurips_2026.sty`
+- `neurips2026_ed_latex_source_FINAL_v2/figure1_claim_audit_logic.png`
+- `neurips2026_ed_latex_source_FINAL_v2/figure1_claim_audit_logic.pdf`
 
 ## Canonical Families
 
-- `paper/latex/sections/*.tex`
 - `results/budget_sweep/*.json`
 - `results/prompt_only_*/*.json`
 - `results/degradation_sweep/*.json`
+
+The authoritative final manuscript source is `neurips2026_ed_latex_source_FINAL_v2/paper.tex`. Older repo-local `paper/latex/` draft files are not part of the canonical reviewer package.
 
 Large upstream-derived benchmark data and tests are externalized from the direct review zip. See `artifact/SOURCE_AND_DATA.md` and `artifact/DATA_RELEASE_POLICY.md` for expected layout, hashes/provenance, and redistribution status.
 

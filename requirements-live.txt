@@ -1,0 +1,15 @@
+# Optional live-rerun requirements
+#
+# These packages are for reviewers who want to regenerate raw model outputs with
+# live model inference. The default reviewer audit does not require them.
+#
+# Install versions compatible with your CUDA/PyTorch/vLLM stack. Exact patch
+# versions may differ across hardware, but record your environment if reporting
+# a live rerun.
+
+datasets
+openai
+PyYAML
+torch
+transformers
+vllm

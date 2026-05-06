@@ -18,7 +18,7 @@
 - The no-rerank directionality evidence is normalized into a `v2` paper-facing provenance table, but it remains diagnostic rather than deployable.
 - The bad-prior decomposition now uses seeds `1,2,3`; `all_compile_fail` remains the dominant regression type, but `corrupted_prior` also shows small timeout spillover in some seeds.
 - The compatibility-filtering step for `BigCodeBench-Hard` slice preparation depends on access to an upstream dataset cache; the direct review zip provides cached outputs and provenance, while live reruns require reconstructing processed slices from upstream sources.
-- The package includes current paper-facing objects, a NeurIPS LaTeX starter, and the official style file, but not final camera-ready figure files.
+- The package includes the expert-edited final LaTeX source package in `neurips2026_ed_latex_source_FINAL_v2/`, including the NeurIPS style file, filled checklist, and claim-audit figure asset. The OpenReview submission PDF should be uploaded separately.
 - Public artifact release follows `paper/data_release_policy.md`; upstream benchmark datasets or tests are not redistributed publicly unless redistribution permission is verified.
 - Historical verifier/usefulness assets remain in the repo, but usefulness is not part of the current canonical claim set because this package does not include a dedicated paper-facing negative-result object for it.
 - The bibliography starter now covers the core manuscript buckets, but it is still intentionally selective rather than exhaustive.

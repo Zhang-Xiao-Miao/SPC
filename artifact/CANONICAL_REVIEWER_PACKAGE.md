@@ -5,21 +5,22 @@ This file describes the intended anonymous reviewer package. It is a navigation 
 ## Reviewer Quickstart
 
 ```bash
+bash artifact/reviewer_audit.sh
 bash artifact/reproduce_main.sh
 bash artifact/verify_provenance.sh
-cat artifact/CLAIM_TO_EVIDENCE.md
-cat artifact/KNOWN_LIMITATIONS.md
 ```
 
 ## First Files To Inspect
 
+- `artifact/REVIEWER_WORKFLOW.md`
 - `artifact/REVIEWER_QUICKSTART.md`
 - `artifact/README_ANON.md`
+- `neurips2026_ed_latex_source_FINAL_v2/paper.tex`
 - `artifact/CLAIM_TO_EVIDENCE.md`
 - `artifact/PAPER_TO_ARTIFACT_MAP.md`
 - `artifact/KNOWN_LIMITATIONS.md`
 - `artifact/REPRODUCIBILITY_STATUS.md`
-- `artifact/VERIFICATION_LOG_2026-04-29.md`
+- `artifact/VERIFICATION_LOG_2026-05-06.md`
 - `paper/contribution_and_artifact_summary.md`
 - `paper/artifact_reviewer_walkthrough.md`
 
@@ -33,6 +34,9 @@ cat artifact/KNOWN_LIMITATIONS.md
 
 ## Canonical Evidence Objects
 
+- `neurips2026_ed_latex_source_FINAL_v2/paper.tex`
+- `neurips2026_ed_latex_source_FINAL_v2/checklist_filled.tex`
+- `neurips2026_ed_latex_source_FINAL_v2/figure1_claim_audit_logic.png`
 - `paper/tbl_conclusion_shift.md`
 - `paper/b_mbpp224_fair_budget.md`
 - `paper/tbl_prompt_only_structural_mbpp224_control.md`
@@ -44,6 +48,8 @@ cat artifact/KNOWN_LIMITATIONS.md
 - `paper/tbl_controlled_degradation_sweep.md`
 - `artifact/CLAIM_SURVIVAL_CARD.md`
 - `retrieval/prompt_structural.py`
+- `scripts/70_reviewer_claim_audit.py`
+- `scripts/71_run_pipeline_smoke_test.py`
 - `scripts/67_make_prior_quality_audit.py`
 - `scripts/68_make_prior_quality_response.py`
 - `scripts/69_run_controlled_degradation_sweep.py`

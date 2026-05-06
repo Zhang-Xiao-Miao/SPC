@@ -1,0 +1,329 @@
+\documentclass{article}
+\usepackage[eandd]{neurips_2026}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{enumitem}
+\usepackage[section]{placeins}
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\title{Auditing Quality-Conditioned Structural-Prior Claims in Code Generation}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+\begin{abstract}
+Structural priors can guide few-shot code generation, but their evaluation is confounded when structural prompting, information access, candidate budget, prior quality, and execution-based selection change together. We study this as an evaluation-design problem: after controlling test-time opportunity and disclosing information access, which structural-prior claim remains warranted? We introduce SPC-Audit, a matched-budget diagnostic audit protocol for structural-prior claims in execution-evaluated Python function generation. The protocol matches candidate budget and execution-call accounting, reports prompt-token differences rather than claiming full compute equality, separates diagnostic from deployable selection, includes prompt-only and bad-prior boundary controls, and records explicit non-claims. On MBPP+224, an uncontrolled comparison suggests a large gain, 167/224 $\to$ 184/224; under the controlled diagnostic comparison, the supported positive claim narrows to fixed code-aware \texttt{syntax\_aware} episodes, where \texttt{no\_prior + MBR-exec} solves $178.67 \pm 0.58$ tasks and \texttt{multi\_prior + MBR-exec} solves $185.00 \pm 1.73$. The average gain is modest but directionally consistent across the three seeds, and paired query-seed outcomes are positive but sparse (30 improved, 11 regressed, 631 unchanged). The audit further identifies a quality-conditioned evaluation claim: under this protocol, intended code-aware priors show most positive movement in medium/high retrospective-fidelity bins, while more than half of \texttt{multi\_prior} cases remain low fidelity; the full query-side prompt-only structural rerun is non-positive and rarely constructs high-retrospective-fidelity priors; and misleading priors fall below the no-prior baseline. We therefore argue that structural-prior evaluations should report retrospective-fidelity coverage, quality-conditioned net delta, harm rate, claim survival, and explicit non-claims, not only average prior-versus-no-prior deltas. The contribution is a reusable E\&D reporting pattern and claim-audited artifact, not a deployable structural-prior method, new benchmark, strongest-method result, broad-transfer result, or backend-invariance claim.
+\end{abstract}
+
+\section{Introduction}
+Execution-based benchmarks have made few-shot code generation increasingly measurable. Benchmarks such as MBPP, HumanEval, EvalPlus, and BigCodeBench evaluate generated programs by running tests rather than relying only on surface-form similarity \citep{austin2021program,chen2021evaluating,liu2023evalplus,zhuo2024bigcodebench}. At the same time, structure-aware code-generation pipelines add signals such as syntax-aware retrieval, program-structure summaries, or structural hints \citep{zhang2023syntax,tipirneni2022structcoder}. These signals are natural for code, but they are often evaluated in pipelines that also change retrieval information access, candidate budget, prior construction, and test-time execution selection.
+
+The difficulty is attribution. A higher solved-task count does not by itself show whether the improvement should be attributed to structural conditioning, extra candidate-generation opportunity, code-aware retrieval, same-test execution selection, or the quality of the supplied prior. This problem is especially acute for structural priors because a prior is not merely present or absent: it may be high fidelity, low fidelity, or actively misleading.
+
+We therefore treat evaluation design as the object of study. We ask which structural-prior claim survives after candidate budget, execution-call accounting, information access, selection status, prompt-only controls, bad-prior controls, and diagnostic prior quality are made explicit. We call the resulting reporting pattern SPC-Audit: Structural-Prior Claim Audit. SPC-Audit is not a new benchmark, generation model, deployable retrieval method, or strongest-method claim. It is a diagnostic protocol for auditing which claims remain warranted under specified assumptions about budget, information access, selection, and prior quality.
+
+The central empirical lesson is a quality-conditioned evaluation claim. In the main controlled comparison, intended code-aware priors yield a modest positive diagnostic effect. However, the query-side prompt-only structural control does not reproduce the effect on full MBPP+224, and misleading priors fall below the no-prior baseline. A retrospective prior-quality response audit reconciles these observations: for intended code-aware priors, most positive movement appears in medium/high diagnostic-fidelity bins, whereas the full query-side prompt-only rerun rarely constructs high-retrospective-fidelity priors. This should be interpreted as an E\&D claim about what the evaluation must measure, not as a causal mechanism proof or a deployable prior-quality estimator.
+
+This framing yields three contributions. First, we provide SPC-Audit, a matched-budget diagnostic audit protocol for structural-prior claims with explicit information-access and selector-status disclosure. Second, we show a conclusion shift on MBPP+224: a large uncontrolled gain narrows to a modest fixed code-aware diagnostic effect, while full query-side prompt-only structural retrieval remains unsupported. Third, we provide a quality-response reporting artifact: structural-prior evaluations should report retrospective-fidelity coverage, quality-conditioned net delta, harm rate, threshold sensitivity, paired directionality, survived claims, and explicit non-claims rather than only an average prior-versus-no-prior delta.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.98\linewidth]{figure1_claim_audit_logic.png}
+\caption{Overview of the claim-audit logic. SPC-Audit turns an uncontrolled operational gain into a narrower supported claim, a quality-conditioned evaluation claim, and explicit boundaries/non-claims.}
+\label{fig:claim-audit-logic}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{p{0.22\linewidth}p{0.18\linewidth}Yp{0.23\linewidth}}
+\toprule
+Claim & Status & Evidence in this paper & Boundary \\
+\midrule
+C0: operational pipeline gain & Supported but entangled & $167/224 \to 184/224$ & Operational comparison; not attributed. \\
+C1: matched-budget code-aware diagnostic effect & Supported with scope & $178.67 \pm 0.58 \to 185.00 \pm 1.73$ & Fixed code-aware \texttt{syntax\_aware} episodes only. \\
+C2: quality-conditioned evaluation claim & Diagnostic support & Intended priors are most positive in medium/high bins; query-side prompt-only high-retrospective-fidelity coverage is rare; bad priors regress. & Retrospective audit; not causal proof. \\
+C3: full query-side prompt-only structural retrieval & Not supported & $179.33 \pm 2.31$ vs. $177.67 \pm 1.53$ & Deployable query-side prompt-only claim unsupported. \\
+C4: broad transfer / strongest-method / backend-invariance & Unsupported & External and backend rows are mixed or replicate-sensitive. & Explicit non-claims. \\
+\bottomrule
+\end{tabularx}
+\caption{Claim audit card and survival hierarchy. The paper supports a quality-conditioned evaluation claim rather than a deployable method or a broad structural-prior claim.}
+\label{tab:claim-card}
+\end{table}
+
+\section{Related Work}
+Execution-based code-generation benchmarks motivate our setting. MBPP and HumanEval established task-level program synthesis evaluation for generated Python functions \citep{austin2021program,chen2021evaluating}; EvalPlus strengthens evaluation by expanding test suites \citep{liu2023evalplus}; BigCodeBench broadens code-generation evaluation toward more complex instructions and function calls \citep{zhuo2024bigcodebench}. These benchmarks make outcome measurement more reliable, but they do not by themselves determine whether an observed improvement is attributable to structural conditioning, retrieval information, candidate budget, prior quality, or test-time selection.
+
+Structure-aware and retrieval-augmented code-generation work motivates the structural-prior hypothesis. Syntax-aware retrieval and structure-aware code models suggest that program structure can provide useful conditioning information \citep{zhang2023syntax,tipirneni2022structcoder}. Our focus is not to introduce a stronger structural prior. Instead, we audit what claim remains when the evaluation controls candidate-generation opportunity, reports information access, and includes prompt-only, bad-prior, and quality-response boundaries.
+
+Execution-guided selection and MBR-style selection motivate our treatment of MBR-exec as a diagnostic selector rather than as part of the structural prior \citep{shi2022execution,vamvas2024linear}. Because our selector executes candidates against packaged task tests and uses those same tests for reporting, it is appropriate for diagnostic attribution but not for a deployment-time selection claim.
+
+Evaluation reporting and artifact documentation are also central to our framing. Prior work has argued that test-set scores alone can be insufficient for drawing accurate conclusions, and that benchmark comparisons should account for sources of variation rather than relying only on a single aggregate number \citep{dodge2019show,bouthillier2021accounting}. Reproducibility efforts in machine learning further motivate clear code/data availability, checklists, and executable artifacts \citep{pineau2021improving}. Documentation frameworks such as datasheets, model cards, and data statements motivate structured reporting of provenance, intended use, evaluation conditions, and limitations \citep{gebru2021datasheets,mitchell2019model,bender2018data}. SPC-Audit follows this reporting-oriented tradition, but specializes it to structural-prior claims through matched-budget accounting, information-access disclosure, query-side prompt-only and bad-prior controls, retrospective-fidelity response, and explicit non-claims.
+
+\section{SPC-Audit: Matched-Budget Diagnostic Evaluation}
+We study execution-evaluated few-shot Python function generation. Each evaluation instance is an episode containing a query task, an entry point, executable tests, and a fixed set of retrieved support examples. A generator produces candidate programs, and a selector chooses one candidate. The episode is counted as solved if the selected candidate passes the associated tests.
+
+The protocol varies the prior condition while matching candidate budget and execution-call accounting. In the main MBPP+224 comparison, every condition uses \texttt{syntax\_aware} retrieval, one support example, candidate budget 8, execution budget 8, diagnostic MBR-exec selection, and seeds 1, 2, and 3. We compare \texttt{no\_prior}, \texttt{single\_prior}, \texttt{multi\_prior}, \texttt{random\_prior}, and \texttt{corrupted\_prior}. Matched budget in this paper means matched candidate budget and execution-call accounting; it does not imply matched prompt tokens, latency, wall-clock time, or full compute equality.
+
+The information-access disclosure is part of the protocol. The main \texttt{syntax\_aware} episode construction uses stored query code fields and is therefore code-aware diagnostic evidence. Prompt-only lexical retrieval uses only query prompt text. The structural prompt-only control is prompt-only only on the query side: it uses query prompt text and entry point, while allowing support-side structure from training-pool examples. We therefore refer to it more precisely as a query-side prompt-only, support-structure-aware control. \texttt{corrupted\_prior} is oracle-derived before corruption and is a diagnostic stress test, not a deployable method.
+
+MBR-exec is also diagnostic. It executes candidates against packaged task tests and uses those same tests for candidate selection and solved-count reporting. Under the main comparison, every prior condition uses the same candidate budget and execution-selection regime. This makes the comparison suitable for E\&D attribution auditing, not for claiming a deployment-time selection system.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabularx}{\linewidth}{p{0.25\linewidth}Y}
+\toprule
+Audit item & Required reporting in this paper \\
+\midrule
+Candidate budget & Total candidates and split across prior variants. \\
+Execution-call accounting & Executions available to each condition. \\
+Prompt-token accounting & Token totals are reported; they are not matched. \\
+Information access & Query/support fields used by retrieval, prompting, selection, and evaluation. \\
+Selection status & Deployable, diagnostic, same-test, public-test, or oracle-like. \\
+Query-side prompt-only boundary & A condition without query solution code. \\
+Bad-prior control & Random, corrupted, or misleading priors under the same selector. \\
+Quality response & Coverage, bin-level net delta, harm rate, separation, and threshold sensitivity. \\
+Explicit non-claims & No strongest-method, broad-transfer, backend-invariance, full-compute, deployable, or safety claim. \\
+\bottomrule
+\end{tabularx}
+\caption{SPC-Audit reporting checklist. The checklist is a reusable E\&D reporting pattern rather than a new benchmark or deployable method.}
+\label{tab:audit-checklist}
+\end{table}
+
+\section{Prior-Quality Response as an Evaluation Object}
+A prior-versus-no-prior average delta is incomplete because a prior condition can look weak either because structural information is unhelpful or because the condition rarely constructs higher-fidelity priors. We use prior quality as shorthand for a retrospective structural-fidelity response, not as a deployable or complete quality estimate. The audit asks what retrospective fidelity was supplied, how often medium/high retrospective-fidelity priors were constructed, whether changed outcomes are positive or negative inside each fidelity band, and whether low-quality or misleading priors increase regressions.
+
+For a prior condition, we report five quantities: retrospective-fidelity coverage, bin-level net delta, harm rate, outcome-level fidelity separation, and threshold sensitivity. Coverage is the fraction of query-seed outcomes in low, medium, or high diagnostic-fidelity bins. The canonical bins are fixed as low $<0.15$, medium $0.15\leq f<0.50$, and high $\geq0.50$ for \texttt{structure\_fidelity} score $f$. Bin-level net delta is improved minus regressed outcomes within a bin. Harm rate is regressions divided by changed outcomes. Outcome-level fidelity separation compares the mean diagnostic fidelity of improved and regressed outcomes without binning. Threshold sensitivity repeats the audit at additional fixed cutoffs.
+
+In this paper, fidelity is measured by \texttt{structure\_fidelity}, a stored diagnostic field comparing query reference-code structure with the prior summary through API-call, control-flow, and data-structure overlap. Because it uses reference code, it is retrospective and non-deployable. It is therefore a diagnostic stratifier, not a deployable quality estimator. For intended priors it helps stratify outcome movement; for corrupted priors it also shows why structural overlap alone is insufficient.
+
+The query-side prompt-only structural matcher is fixed and deterministic. Query-side matching uses only task prompt text and entry point. Support-side matching may use training-pool support prompt, entry point, and support-code structure. The same formula and constants are used for both query-side prompt-only structural controls, including the full MBPP+224 rerun. The reported full rerun is not selected from an alternative-weight sweep, and no alternative-weight sweep is used in the canonical artifact. It is a boundary control, not a new prior-construction method.
+
+\section{Experimental Setup}
+The main result uses Qwen/Qwen2.5-Coder-7B-Instruct through \texttt{vllm\_openai} on MBPP+224 \citep{hui2024qwen25coder}. The main matched-budget table compares \texttt{no\_prior}, \texttt{single\_prior}, \texttt{multi\_prior}, \texttt{random\_prior}, and \texttt{corrupted\_prior} across seeds 1, 2, and 3. Candidate budget and execution budget are both 8; prompt-token totals are reported but not matched. Unless otherwise stated, all $\pm$ values denote the sample standard deviation across reported seeds, not a standard error or confidence interval.
+
+Supplementary boundary checks use MBPP+100, HumanEval+, BigCodeBench-Hard compatible slices, DeepSeek \citep{guo2024deepseekcoder}, and StarCoder-family backends \citep{li2023starcoder}. These rows instantiate the reporting pattern and test sensitivity; they do not support backend invariance or broad transfer. We retain positive, neutral, mixed, and negative rows because the purpose is claim calibration rather than result selection.
+
+\section{Results}
+\subsection{Matched-budget evaluation narrows the claim}
+The central result is a conclusion shift. Under the earlier uncontrolled comparison, the relevant contrast was 167/224 $\to$ 184/224, which is operationally informative but entangled because structural conditioning and execution-selection opportunity change together. Under matched candidate budget and execution-call accounting, the relevant contrast becomes $178.67 \pm 0.58 \to 185.00 \pm 1.73$. The average matched candidate/execution-budget gain is modest but consistently positive across the three seeds, and it should be interpreted as a scoped diagnostic effect in fixed code-aware episodes rather than as a broad structural-prior method claim.
+
+Paired outcomes make the scope clearer. For \texttt{multi\_prior} versus \texttt{no\_prior}, the pooled query-seed comparison gives 30 improved, 11 regressed, and 631 unchanged outcomes, with positive net movement in all three seeds. Because query-seed outcomes are not fully independent, we also collapse by task: 14 tasks have positive net deltas, 5 have negative net deltas, and 205 are unchanged. We therefore interpret the result as positive but scoped directional evidence rather than as a robustness claim.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Setting & Solved mean & Range & $\Delta$ & Avg cand. & Prompt tok. & Compl. tok. \\
+\midrule
+\texttt{no\_prior} & 178.67 & [178,179] & +0.00 & 8.00 & 38261 & 14736 \\
+\texttt{single\_prior} & 181.67 & [181,183] & +3.00 & 8.00 & 46078 & 13182 \\
+\texttt{multi\_prior} & 185.00 & [184,187] & +6.33 & 8.00 & 46008 & 13195 \\
+\texttt{random\_prior} & 172.33 & [172,173] & -6.33 & 8.00 & 60193 & 13938 \\
+\texttt{corrupted\_prior} & 173.33 & [172,175] & -5.33 & 8.00 & 59927 & 13916 \\
+\bottomrule
+\end{tabular}
+\caption{Main MBPP+224 matched-budget diagnostic comparison. All settings use candidate budget 8 and execution budget 8 with diagnostic MBR-exec. Prompt tokens are reported but not matched; this table does not claim full compute equality.}
+\label{tab:main-result}
+\end{table}
+
+\subsection{A quality-conditioned evaluation claim}
+The retrospective-fidelity response audit is the main reason to treat the query-side prompt-only negative result as more than a defensive caveat. It shows that structural-prior effects are not well summarized by prior presence alone. For intended priors in fixed code-aware \texttt{syntax\_aware} episodes, most positive net movement appears in medium/high retrospective-fidelity bins. For \texttt{multi\_prior}, medium/high retrospective-fidelity cases cover 0.469 of query-seed outcomes, with 23 improvements, 6 regressions, net +17, and harm rate 0.207. In contrast, the low-fidelity bin has net +2. The modest average gain is therefore consistent with limited coverage of higher retrospective-fidelity priors: more than half of \texttt{multi\_prior} query-seed outcomes remain low fidelity, and most of the positive movement comes from the medium/high retrospective-fidelity subset. \texttt{single\_prior} shows the same directional pattern, though more weakly.
+
+The bad-prior rows provide an important nuance. Random and corrupted priors are harmful even though structural overlap is not always minimal. This means \texttt{structure\_fidelity} is useful for intended-prior stratification, but it is not a complete quality metric. A prior can preserve some structural surface while still being misleading enough to increase regressions. We therefore frame the result as a quality-conditioned evaluation claim rather than a scalar-quality or causal-mechanism claim.
+
+The main table collapses medium and high bins because the high bin is sparse and both bins show positive net movement. Threshold sensitivity supports the intended-prior interpretation without turning the thresholds into a tuning rule: for code-aware \texttt{multi\_prior}, thresholds 0.10, 0.15, 0.25, and 0.50 yield net deltas of +17, +17, +16, and +4. These checks remain retrospective and diagnostic.
+
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Regime / setting & Bin & Coverage & Improved & Regressed & Net & Harm \\
+\midrule
+Code-aware \texttt{single\_prior} & low & 0.603 & 9 & 10 & -1 & 0.526 \\
+Code-aware \texttt{single\_prior} & medium/high & 0.397 & 16 & 6 & +10 & 0.273 \\
+Code-aware \texttt{multi\_prior} & low & 0.531 & 7 & 5 & +2 & 0.417 \\
+Code-aware \texttt{multi\_prior} & medium/high & 0.469 & 23 & 6 & +17 & 0.207 \\
+Code-aware \texttt{random\_prior} & all bins & 1.000 & 25 & 44 & -19 & 0.638 \\
+Code-aware \texttt{corrupted\_prior} & all bins & 1.000 & 34 & 50 & -16 & 0.595 \\
+Query-prompt-only \texttt{single\_prior} & low & 0.808 & 12 & 23 & -11 & 0.657 \\
+Query-prompt-only \texttt{single\_prior} & medium/high & 0.192 & 4 & 10 & -6 & 0.714 \\
+Query-prompt-only \texttt{multi\_prior} & low & 0.799 & 14 & 15 & -1 & 0.517 \\
+Query-prompt-only \texttt{multi\_prior} & medium/high & 0.201 & 4 & 8 & -4 & 0.667 \\
+\bottomrule
+\end{tabular}
+\caption{Condensed prior-quality response card. Intended-prior rows support the quality-conditioned evaluation claim; bad-prior rows show that structural overlap alone is insufficient. Bins use low $<0.15$, medium $0.15\leq f<0.50$, and high $\geq0.50$ for \texttt{structure\_fidelity} score $f$; medium/high are collapsed in the table. The audit is retrospective and reference-code-based.}
+\label{tab:quality-response}
+\end{table}
+
+\subsection{Query-side prompt-only failure exposes a fidelity-coverage boundary}
+Query-side prompt-only controls bound the claim and make the quality-response view necessary. Lexical retrieval on MBPP+100 does not reproduce the effect: \texttt{no\_prior} and \texttt{single\_prior} both solve $81.50 \pm 0.71$, while \texttt{multi\_prior} solves $80.50 \pm 0.71$. A query-side prompt-only structural control on MBPP+100 is weakly positive for \texttt{multi\_prior}: $82.50 \pm 2.12$ for \texttt{no\_prior}, $81.00 \pm 0.00$ for \texttt{single\_prior}, and $83.50 \pm 0.71$ for \texttt{multi\_prior}. The decisive full MBPP+224 query-side prompt-only structural rerun is non-positive.
+
+The full query-side prompt-only \texttt{prompt\_structural} rerun has low diagnostic-fidelity coverage: only 6 of 672 \texttt{multi\_prior} query-seed outcomes reach the high-retrospective-fidelity bin. This does not prove that low retrospective fidelity is the sole cause of the query-side prompt-only failure. It does show that a structural-prior evaluation must report whether the protocol actually supplies high-retrospective-fidelity priors often enough to support the claimed effect.
+
+\begin{table}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{llcccY}
+\toprule
+Control & Dataset & \texttt{no\_prior} & \texttt{single\_prior} & \texttt{multi\_prior} & Interpretation \\
+\midrule
+Prompt-only lexical & MBPP+100 & $81.50\pm0.71$ & $81.50\pm0.71$ & $80.50\pm0.71$ & No positive prompt-only lexical effect. \\
+Query-prompt-only structural & MBPP+100 & $82.50\pm2.12$ & $81.00\pm0.00$ & $83.50\pm0.71$ & Weak positive slice only. \\
+Query-prompt-only structural & MBPP+224 & $179.33\pm2.31$ & $173.67\pm0.58$ & $177.67\pm1.53$ & Full rerun non-positive. \\
+\bottomrule
+\end{tabularx}
+\caption{Query-side prompt-only boundary controls. The full MBPP+224 query-side prompt-only structural rerun is the claim-boundary row; it does not support deployable prompt-only structural retrieval.}
+\label{tab:prompt-only}
+\end{table}
+
+\subsection{Boundary checks prevent broader claims}
+Stress and boundary analyses define the claim scope rather than robustness. The bad-prior controls provide the harm side of the quality-response claim: under the same candidate budget and diagnostic selector, \texttt{random\_prior} and \texttt{corrupted\_prior} solve $172.33 \pm 0.58$ and $173.33 \pm 1.53$ tasks, both below \texttt{no\_prior} at $178.67 \pm 0.58$. The multi-seed decomposition is provided in the artifact; regressions are dominated by all-candidate compile failure. We treat this as diagnostic proposal-quality evidence, not a deployment-safety or causal mechanism claim.
+
+The MBPP+100 budget sweep shows varying ordering across budgets 1, 4, 8, and 16, so the main effect should not be interpreted as budget-invariant. HumanEval+164 supports non-degradation, not transfer. HumanEval+50 with DeepSeek is mixed across two seeds, giving a two-seed aggregate of 86/100 versus 85/100. BigCodeBench-Hard compatible slices are slice-sensitive: compatible30 is negative, 14/30 versus 11/30, while compatible50 is slightly positive, 22/50 versus 23/50. Cross-backend evidence is also boundary evidence. Qwen and DeepSeek provide same-scale MBPP+100 support, but StarCoder-family and local backend rows are replicate-sensitive or negative under weaker serving conditions.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabularx}{\linewidth}{p{0.16\linewidth}Yp{0.31\linewidth}}
+\toprule
+Boundary & Evidence & Interpretation \\
+\midrule
+Bad priors & \texttt{random\_prior} and \texttt{corrupted\_prior} are below \texttt{no\_prior} under the same diagnostic selector. & Misleading structure can harm; diagnostic proposal-quality evidence. \\
+Budget & MBPP+100 sweep varies across budgets 1, 4, 8, 16. & Effects are budget-sensitive, not monotonic. \\
+External slices & HumanEval+164 non-degradation; HumanEval+50 mixed; BigCodeBench-Hard slices mixed. & Compatibility/slice evidence, not broad transfer. \\
+Backends & Qwen/DeepSeek support; local/weak backend rows mixed or negative. & Backend-aware audit evidence, not backend invariance. \\
+\bottomrule
+\end{tabularx}
+\caption{Compact boundary instantiations. These checks define claim scope; they do not support broad transfer, backend invariance, budget invariance, deployment, or robustness.}
+\label{tab:boundary}
+\end{table}
+
+\section{Artifact and Reproducibility}
+The artifact is part of the E\&D contribution. It packages the claim-to-evidence map, raw-result provenance, table-regeneration scripts, matcher checks, prior-quality response tables, reusable audit templates, information-access cards, and known limitations. The reviewer quickstart runs \texttt{bash artifact/reproduce\_main.sh} to regenerate paper-facing tables and figure-support files from cached outputs, and \texttt{bash artifact/verify\_provenance.sh} to check prompt-only matcher constants, query-side access boundaries, stored \texttt{structure\_fidelity} fields, and prior-quality response regeneration. These scripts do not call an LLM and do not rebuild raw generations.
+
+The artifact includes a verification log reporting PASS for cached table regeneration, matcher provenance checks, stored \texttt{structure\_fidelity} checks, and prior-quality audit regeneration. This supports artifact inspection and table provenance; it is not a claim that all raw LLM completions are regenerated without live inference.
+
+The artifact distinguishes cached-output regeneration from live model reruns. The main benchmark and external evaluations are rerunnable under the matching live-inference assumption. Full live reruns require matching model endpoints or local models and should be run in an isolated environment because generated Python code is untrusted. Public data release follows a conservative policy: benchmark-derived resources are redistributed only when upstream permission is verified; otherwise the artifact provides preparation scripts, provenance notes, metadata, expected layout, and hashes.
+
+\section{Limitations}
+The scientific object is narrow: execution-evaluated few-shot Python function generation under fixed candidate budgets. The results do not cover repository-level generation, tool-use agents, multi-file synthesis, deployment safety, or code safety.
+
+Matched budget does not mean full compute equality. Candidate budget and execution calls are matched, but prompt-token totals and wall-clock time are not. MBR-exec is diagnostic rather than deployable because it uses packaged task tests for both candidate selection and solved-count reporting.
+
+The fixed \texttt{syntax\_aware} episode construction is code-aware. Query-side prompt-only controls reduce ambiguity but do not remove this boundary: the full MBPP+224 query-side prompt-only structural rerun is non-positive, so deployable prompt-only structural retrieval remains unsupported.
+
+The prior-quality audit is retrospective shorthand for a structural-fidelity audit because \texttt{structure\_fidelity} uses reference-code structure. It is not a deployable quality estimator, high-quality prior constructor, causal threshold, or proof that prior quality is the only factor behind prompt-only failure. The corrupted-prior rows further show that structural overlap alone is insufficient: misleading structure can retain partial overlap while still increasing regressions.
+
+External and backend evidence is deliberately qualified. HumanEval+ and BigCodeBench-Hard rows are slice-sensitive or non-degradation evidence, not broad transfer. Backend rows are replicate-sensitive boundary checks, not backend invariance evidence. These limitations are not incidental caveats; they define the claim boundary that SPC-Audit is intended to expose.
+
+\section{Conclusion}
+The evaluation lesson is claim discipline with prior-quality accounting. A large uncontrolled gain can become a narrower claim once candidate budget, execution-call accounting, information access, and selection status are audited. In this setting, fixed code-aware diagnostic episodes support a modest structural-prior effect, full query-side prompt-only structural retrieval remains unsupported, and the retrospective prior-quality response audit supports a quality-conditioned evaluation claim. The effect is modest on average in part because current prior construction supplies medium/high-retrospective-fidelity priors for only a subset of cases, where most of the positive movement is concentrated.
+
+The main scientific finding is not that structural priors are broadly useful, but that structural-prior claims should be audited as quality-conditioned evaluation claims: evaluation must ask not only whether a prior is present, but whether the protocol supplies high-retrospective-fidelity priors often enough, and whether low-quality or misleading priors introduce harm. The intended reuse is therefore SPC-Audit: future structural-prior evaluations should report budget, information access, selector status, prompt-only and bad-prior controls, paired directionality, prior-quality response when trusted or reference structure is available, and the hierarchy of claims that survive. The accompanying artifact makes this claim-to-evidence path inspectable through raw-result provenance, regeneration scripts, matcher checks, prior-quality response tables, reusable templates, a claim-survival card, and known limitations.
+
+
+\begin{thebibliography}{17}
+\bibitem[Austin et~al.(2021)]{austin2021program}
+Austin, J., Odena, A., Nye, M., Bosma, M., Michalewski, H., Dohan, D., Jiang, E., Cai, C., Terry, M., Le, Q., and Sutton, C. (2021).
+Program synthesis with large language models.
+\emph{arXiv preprint arXiv:2108.07732}.
+
+\bibitem[Bender and Friedman(2018)]{bender2018data}
+Bender, E. M. and Friedman, B. (2018).
+Data statements for natural language processing: Toward mitigating system bias and enabling better science.
+\emph{Transactions of the Association for Computational Linguistics}, 6:587--604.
+
+\bibitem[Bouthillier et~al.(2021)]{bouthillier2021accounting}
+Bouthillier, X. et al. (2021).
+Accounting for variance in machine learning benchmarks.
+\emph{Proceedings of Machine Learning and Systems}, 3.
+
+\bibitem[Chen et~al.(2021)]{chen2021evaluating}
+Chen, M., Tworek, J., Jun, H., Yuan, Q., Pinto, H. P. d. O., Kaplan, J., Edwards, H., Burda, Y., Joseph, N., Brockman, G., et al. (2021).
+Evaluating large language models trained on code.
+\emph{arXiv preprint arXiv:2107.03374}.
+
+\bibitem[Dodge et~al.(2019)]{dodge2019show}
+Dodge, J., Gururangan, S., Card, D., Schwartz, R., and Smith, N. A. (2019).
+Show your work: Improved reporting of experimental results.
+In \emph{Proceedings of EMNLP-IJCNLP}, pages 2185--2194.
+
+\bibitem[Gebru et~al.(2021)]{gebru2021datasheets}
+Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H., Daum\'e III, H., and Crawford, K. (2021).
+Datasheets for datasets.
+\emph{Communications of the ACM}, 64(12):86--92.
+
+\bibitem[Guo et~al.(2024)]{guo2024deepseekcoder}
+Guo, D. et al. (2024).
+DeepSeek-Coder: When the large language model meets programming -- the rise of code intelligence.
+\emph{arXiv preprint arXiv:2401.14196}.
+
+\bibitem[Hui et~al.(2024)]{hui2024qwen25coder}
+Hui, B. et al. (2024).
+Qwen2.5-Coder technical report.
+\emph{arXiv preprint arXiv:2409.12186}.
+
+\bibitem[Li et~al.(2023)]{li2023starcoder}
+Li, R. et al. (2023).
+StarCoder: May the source be with you!
+\emph{arXiv preprint arXiv:2305.06161}.
+
+\bibitem[Liu et~al.(2023)]{liu2023evalplus}
+Liu, J., Xia, C. S., Wang, Y., and Zhang, L. (2023).
+Is your code generated by ChatGPT really correct? Rigorous evaluation of large language models for code generation.
+In \emph{Advances in Neural Information Processing Systems}.
+
+\bibitem[Mitchell et~al.(2019)]{mitchell2019model}
+Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., and Gebru, T. (2019).
+Model cards for model reporting.
+In \emph{Proceedings of the Conference on Fairness, Accountability, and Transparency}, pages 220--229.
+
+\bibitem[Pineau et~al.(2021)]{pineau2021improving}
+Pineau, J., Vincent-Lamarre, P., Sinha, K., Larivi\`ere, V., Beygelzimer, A., d'Alch\'e-Buc, F., Fox, E., and Larochelle, H. (2021).
+Improving reproducibility in machine learning research.
+\emph{Journal of Machine Learning Research}, 22(164):1--20.
+
+\bibitem[Shi et~al.(2022)]{shi2022execution}
+Shi, F., Fried, D., Ghazvininejad, M., Zettlemoyer, L., and Wang, S. I. (2022).
+Natural language to code translation with execution.
+In \emph{Proceedings of EMNLP}.
+
+\bibitem[Tipirneni et~al.(2022)]{tipirneni2022structcoder}
+Tipirneni, S., Zhu, M., and Reddy, C. K. (2022).
+StructCoder: Structure-aware transformer for code generation.
+\emph{arXiv preprint arXiv:2206.05239}.
+
+\bibitem[Vamvas and Sennrich(2024)]{vamvas2024linear}
+Vamvas, J. and Sennrich, R. (2024).
+Linear-time minimum Bayes risk decoding with reference aggregation.
+In \emph{Proceedings of ACL}.
+
+\bibitem[Zhang et~al.(2023)]{zhang2023syntax}
+Zhang, X., Zhou, Y., Yang, G., and Chen, T. (2023).
+Syntax-aware retrieval augmented code generation.
+In \emph{Findings of EMNLP}, pages 1291--1302.
+
+\bibitem[Zhuo et~al.(2024)]{zhuo2024bigcodebench}
+Zhuo, T. Y. et al. (2024).
+BigCodeBench: Benchmarking code generation with diverse function calls and complex instructions.
+\emph{arXiv preprint arXiv:2406.15877}.
+\end{thebibliography}
+
+\input{checklist_filled}
+\end{document}

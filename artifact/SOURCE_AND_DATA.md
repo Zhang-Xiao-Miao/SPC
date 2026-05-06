@@ -18,7 +18,7 @@
 
 The direct review zip excludes large upstream-derived benchmark data and tests so the package remains below the direct-upload size limit. The reviewer quickstart uses packaged cached outputs and raw-result JSONs; it does not need benchmark data, a GPU, a network connection, an API key, or live LLM calls.
 
-Live reruns require reconstructing the expected `data/` layout from upstream benchmark sources and preparation scripts before invoking generation/evaluation commands.
+Live reruns require reconstructing the expected `data/` layout from upstream benchmark sources and preparation scripts before invoking generation/evaluation commands. The canonical step-by-step procedure is `artifact/FULL_REPRODUCTION_GUIDE.md`; run `bash artifact/check_live_rerun_prereqs.sh` to see which data files, optional modules, and local endpoints are still missing in a fresh extracted copy.
 
 ## Expected Live-Rerun Data Layout
 

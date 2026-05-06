@@ -1,0 +1,18 @@
+# Reviewer quickstart requirements
+#
+# Python: 3.10+
+#
+# The default reviewer commands use only the Python standard library plus the
+# packaged repository modules:
+#
+#   bash artifact/reviewer_audit.sh
+#   bash artifact/reproduce_main.sh
+#   bash artifact/verify_provenance.sh
+#
+# Optional local code-path smoke test:
+#
+#   bash artifact/run_smoke_test.sh
+#
+# The smoke test uses a synthetic one-task fixture and the non-LLM
+# `retrieval_edit` backend. It does not require torch, transformers, vllm,
+# openai, datasets, network access, GPU access, or an LLM endpoint.

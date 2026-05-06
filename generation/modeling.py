@@ -10,9 +10,6 @@ import warnings
 from dataclasses import dataclass
 from typing import List, Optional
 
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
 from plan_b.schema import Example, GenerationCandidate, PriorCandidate
 
 
@@ -99,6 +96,8 @@ class LocalGenerator:
         self.model = None
         self._vllm_use_completions = False
         if self.generator_name == "hf_causal" and self.model_name:
+            from transformers import AutoModelForCausalLM, AutoTokenizer
+
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
             self.model = AutoModelForCausalLM.from_pretrained(self.model_name)
             self.model.to(self.device)

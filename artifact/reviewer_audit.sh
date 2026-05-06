@@ -6,5 +6,4 @@ export PYTHONDONTWRITEBYTECODE=1
 export PYTHONNOUSERSITE=1
 export PYTHONPATH="$PWD"
 PYTHON_BIN="${PYTHON:-python}"
-"$PYTHON_BIN" -S scripts/65_make_budget_sweep_v2.py
-printf '[PASS] regenerated budget sweep support\n'
+"$PYTHON_BIN" -S scripts/70_reviewer_claim_audit.py

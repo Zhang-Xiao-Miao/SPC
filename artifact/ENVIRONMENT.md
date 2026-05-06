@@ -1,5 +1,9 @@
 # Environment Notes
 
+## Important Reviewer Note
+
+The reviewer quickstart does not require GPU, model endpoints, API keys, network access, or generated-code execution. The GPU/model-serving details below document optional full live rerun conditions only.
+
 ## Recovered Software Snapshot
 
 - Python: `Python 3.13.12`
@@ -63,7 +67,7 @@ CPU family:          6
 Model:               207
 Model name:          INTEL(R) XEON(R) PLATINUM 8558P
 Stepping:            2
-CPU MHz:             3199.933
+CPU MHz:             3200.000
 CPU max MHz:         4000.0000
 CPU min MHz:         800.0000
 BogoMIPS:            5400.00

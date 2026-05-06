@@ -1,145 +1,145 @@
 # SPC-Audit Anonymous Artifact
 
-This is the reviewer-facing artifact for the NeurIPS 2026 E&D submission
-**"Auditing Quality-Conditioned Structural-Prior Claims in Code Generation."**
+This artifact accompanies the NeurIPS 2026 E&D submission:
 
-## What is this artifact?
+> Auditing Quality-Conditioned Structural-Prior Claims in Code Generation
 
-This artifact is **not** a deployable code-generation system, a new benchmark, or a
-leaderboard package. It is a **claim-audit and provenance package** for the paper.
+## What Is This Artifact?
 
-The paper studies a structural-prior code-generation pipeline and asks a narrow
-E&D question:
+This package is both:
 
-> After controlling candidate budget, execution-call accounting, information
-> access, and diagnostic selection, which structural-prior claims remain
-> supported?
+1. a complete experimental codebase for the structural-prior evaluation pipeline; and
+2. a reviewer-fast claim-audit and provenance package for checking the paper's evidence path.
 
-The artifact lets reviewers verify the paper's claim-to-evidence path from
-packaged cached outputs:
+It contains code for episode construction, retrieval and prior construction, candidate generation, diagnostic execution-based selection, evaluation, table construction, cached-output regeneration, and provenance verification.
 
-1. an uncontrolled operational gain is entangled;
-2. the matched-budget comparison supports only a scoped code-aware diagnostic
-   effect;
-3. prompt-only structural retrieval is a boundary result, not a deployment claim;
-4. the prior-quality audit shows why prior presence alone is insufficient;
-5. bad-prior, external-slice, and backend rows define non-claims.
+It is not a deployable code-generation system, a new benchmark, a leaderboard package, a strongest-method claim, a broad-transfer claim, or a backend-invariance claim.
 
-## If you only have 5 minutes
+## What Should Reviewers Do First?
 
-Run from the repository root:
+Run from the artifact root:
 
 ```bash
+bash artifact/reviewer_audit.sh
 bash artifact/reproduce_main.sh
 bash artifact/verify_provenance.sh
 ```
 
-These commands are intended to be fast reviewer checks. They:
+These commands do not call an LLM, do not require GPU/API/network access, and do not execute untrusted generated code.
 
-- regenerate paper-facing tables from cached result files;
-- verify the prompt-only matcher constants;
-- verify that prompt-only query-side matching does not use solution code;
-- verify that stored `structure_fidelity` fields exist;
-- regenerate the prior-quality response audit from cached outputs.
+## If You Only Have 10 Minutes
 
-They do **not** call an LLM, do **not** require a GPU, do **not** require network
-access, and do **not** execute generated code.
+Run:
 
-Expected successful output ends with PASS lines such as:
-
-```text
-[PASS] regenerated main reviewer-facing tables and figures from cached results
-[PASS] prompt_structural matcher constants verified
-[PASS] query-side prompt-only access boundary verified
-[PASS] raw structure_fidelity fields verified
-[PASS] prior-quality response regenerated from cached outputs
+```bash
+bash artifact/reviewer_audit.sh
+bash artifact/reproduce_main.sh
+bash artifact/verify_provenance.sh
 ```
 
-## What do the PASS outputs mean?
+These commands verify the paper-facing claim-to-evidence path from cached outputs. They do not call an LLM, do not require GPU/API keys/network, and do not execute generated code.
 
-The PASS outputs mean that the artifact can regenerate and verify the **derived
-paper-facing evidence** from packaged cached outputs. They do not mean that the
-artifact reran all LLM generations.
+After running them, check:
 
-| Command | What it checks | What it does not do |
-| --- | --- | --- |
-| `artifact/reproduce_main.sh` | Recreates paper-facing tables/figure-support files from cached results | Does not call an LLM; does not run live generation |
-| `artifact/verify_provenance.sh` | Checks matcher constants, prompt-only access boundaries, stored fidelity fields, and prior-quality audit regeneration | Does not prove deployability; does not execute generated code |
+- main matched-budget result: `178.67 -> 185.00`;
+- paired directionality: `30 improved` vs. `11 regressed`;
+- prompt-only boundary: full MBPP+224 prompt-only rerun is non-positive;
+- quality response: medium/high fidelity net `+17`, low fidelity net `+2`;
+- provenance checks: prompt-only query-side access boundary and stored `structure_fidelity`.
 
-## Main paper claims and where to inspect them
+## What Do The PASS Messages Mean?
+
+The PASS messages mean that the artifact can regenerate and verify the derived paper-facing evidence from packaged cached outputs. They do not mean that all LLM generations were rerun.
+
+The default reviewer path checks:
+
+- paper-facing table regeneration;
+- prompt-only matcher constants;
+- query-side prompt-only access boundaries;
+- stored `structure_fidelity` fields;
+- prior-quality audit regeneration;
+- claim-to-evidence consistency.
+
+## Main Claim-To-File Map
 
 | Paper claim | What to open | What to expect |
 | --- | --- | --- |
-| C0: uncontrolled gain is entangled | `paper/tbl_conclusion_shift.md` | `167/224 -> 184/224`, labeled operational/entangled |
-| C1: matched-budget code-aware diagnostic effect | `paper/b_mbpp224_fair_budget.md` | `no_prior + MBR = 178.67`, `multi_prior + MBR = 185.00` |
-| C2: quality-conditioned evaluation claim | `paper/tbl_prior_quality_response.md` | intended priors are most positive in medium/high retrospective-fidelity bins |
-| C3: prompt-only structural retrieval is unsupported | `paper/tbl_prompt_only_structural_mbpp224_control.md` | full `MBPP+224` prompt-only rerun is non-positive |
-| C4: broad transfer/backend invariance are non-claims | `paper/tbl_boundary_instantiations.md` | external/backend rows are mixed or boundary-only |
+| C0 uncontrolled gain | `paper/tbl_conclusion_shift.md` | `167/224 -> 184/224`, operational and entangled |
+| C1 matched-budget effect | `paper/b_mbpp224_fair_budget.md` | `178.67 -> 185.00`, scoped code-aware diagnostic claim |
+| C2 quality-conditioned claim | `paper/tbl_prior_quality_response.md` | medium/high-fidelity intended priors positive; low-fidelity coverage limits average gain |
+| C3 prompt-only unsupported | `paper/tbl_prompt_only_structural_mbpp224_control.md` | full prompt-only structural rerun is non-positive |
+| C4 non-claims | `paper/tbl_boundary_instantiations.md`, `artifact/KNOWN_LIMITATIONS.md` | external/backend rows are mixed, slice-sensitive, or replicate-sensitive boundary evidence |
 
-For the complete map, read:
+## Final Paper Object Map
 
-```text
-artifact/CLAIM_TO_EVIDENCE.md
-artifact/CLAIM_SURVIVAL_CARD.md
-artifact/PAPER_TO_ARTIFACT_MAP.md
+| Final paper object | Artifact support |
+| --- | --- |
+| Figure 1: claim-audit logic | `neurips2026_ed_latex_source_FINAL_v2/figure1_claim_audit_logic.png` |
+| Table 1: claim audit card | `artifact/CLAIM_SURVIVAL_CARD.md`, `paper/claim_matrix_v2.md` |
+| Table 2: SPC-Audit checklist | `paper/audit_reporting_checklist.md`, `artifact/STRUCTURAL_PRIOR_AUDIT_TEMPLATE.md` |
+| Table 3: main MBPP+224 matched-budget result | `paper/b_mbpp224_fair_budget.md`, `results/mbpp224_fair_budget/summary.json` |
+| Table 4: prior-quality response | `paper/tbl_prior_quality_response.md`, `paper/tbl_prior_quality_response.json` |
+| Table 5: prompt-only boundary controls | `paper/tbl_prompt_only_structural_mbpp224_control.md` |
+| Table 6: compact boundary instantiations | `paper/tbl_boundary_instantiations.md` |
+
+The authoritative paper for review is the PDF uploaded to OpenReview. The final LaTeX source package in `neurips2026_ed_latex_source_FINAL_v2/` is provided for artifact-paper mapping; stale draft PDFs under older paths are intentionally excluded from the review zip.
+
+## Where Is The Full Project Code?
+
+- `configs/`: experiment configuration files.
+- `plan_b/`: core pipeline, schemas, and I/O utilities.
+- `generation/`: candidate generation and prompt construction utilities.
+- `retrieval/`: lexical, syntax-aware, and prompt-only retrieval utilities.
+- `structure/`: structure extraction and prior support utilities.
+- `gating/`: prior/gating support code.
+- `rerank/`: diagnostic MBR-exec selection and sandbox runner.
+- `guardrails/`: guardrail helpers used by the pipeline.
+- `eval/`: execution-based evaluation utilities.
+- `verifier/`: static and learned verifier utilities.
+- `scripts/`: experiment runners and table/audit builders.
+- `results/`: cached outputs and summaries used for paper-facing regeneration.
+- `paper/`: derived paper-facing tables and figure-support files.
+- `artifact/`: reviewer-facing guides, scripts, claim maps, and provenance checks.
+
+## Why Not Rerun All LLM Experiments By Default?
+
+Full live reruns require matching model endpoints or local model weights, upstream benchmark assets, GPU/serving resources, and sandboxed execution of generated Python code. They may not reproduce bit-identical raw completions because of model-serving nondeterminism.
+
+The reviewer quickstart therefore verifies the paper's claim-to-evidence path from packaged cached outputs. Live reruns are optional and documented in `artifact/LIVE_RERUN_GUIDE.md` and `artifact/FULL_REPRODUCTION_GUIDE.md`.
+
+Start a live-rerun readiness check with:
+
+```bash
+bash artifact/check_live_rerun_prereqs.sh
 ```
 
-## How to read the artifact
+Items reported as live-rerun-only are not required for the default reviewer audit path.
 
-Recommended order:
+## Important Windows Smoke-Test Note
 
-1. `artifact/CLAIM_TO_EVIDENCE.md` — which file supports each paper claim.
-2. `artifact/KNOWN_LIMITATIONS.md` — what the paper explicitly does not claim.
-3. `artifact/INFORMATION_ACCESS_CARD.md` — which components are code-aware,
-   prompt-only, retrospective, or same-test diagnostic.
-4. `paper/b_mbpp224_fair_budget.md` — the main matched-budget result.
-5. `paper/tbl_prior_quality_response.md` — the prior-quality response audit.
-6. `paper/tbl_prompt_only_structural_mbpp224_control.md` — the prompt-only
-   boundary result.
+Python's `resource` module is Unix-only. This artifact treats it as optional: Linux/WSL/macOS use POSIX resource limits, while Windows smoke tests use `subprocess` timeout.
 
-## What this artifact does not claim
+On Windows, run the smoke test directly from the artifact root:
 
-This artifact does **not** claim:
-
-- a deployable structural-prior retrieval method;
-- full compute equality, equal latency, or equal prompt-token usage;
-- broad transfer across benchmarks;
-- backend invariance;
-- a new strongest code-generation method;
-- a deployable prior-quality estimator;
-- a causal mechanism proof;
-- safety or deployment readiness.
-
-## Cached regeneration vs. live reruns
-
-The reviewer quickstart uses cached outputs. This is the intended fast path for
-review.
-
-Full live reruns are optional and require matching model endpoints or local
-models. They may execute generated Python code, which should be treated as
-untrusted and run only in a sandbox with resource limits. See:
-
-```text
-artifact/REPRODUCIBILITY_STATUS.md
-artifact/ENVIRONMENT.md
-artifact/SOURCE_AND_DATA.md
-artifact/DATA_RELEASE_POLICY.md
+```bash
+python scripts/71_run_pipeline_smoke_test.py
 ```
 
-## Navigation
+If a stale artifact copy reports `ModuleNotFoundError: No module named 'resource'`, it is an environment-compatibility bug in that stale copy, not a paper-result failure. Use the updated package or the direct Python smoke-test entry point above.
 
-- `artifact/REVIEWER_QUICKSTART.md`: one-page command guide.
-- `artifact/CLAIM_TO_EVIDENCE.md`: claim-to-file map.
-- `artifact/CLAIM_SURVIVAL_CARD.md`: supported, scoped, unsupported, and
-  non-claims.
-- `artifact/INFORMATION_ACCESS_CARD.md`: information-access disclosure.
-- `artifact/KNOWN_LIMITATIONS.md`: limitations and non-claims.
-- `artifact/REPRODUCIBILITY_STATUS.md`: cached regeneration vs. live reruns.
-- `artifact/VERIFICATION_LOG.md`: recorded PASS checks.
-- `artifact/STRUCTURAL_PRIOR_AUDIT_TEMPLATE.md`: reusable audit template.
+## Recommended Reading Order
 
-## One-sentence summary
+1. `artifact/REVIEWER_QUICKSTART.md`
+2. `artifact/PROJECT_GUIDE_FOR_REVIEWERS.md`
+3. `artifact/OUTPUT_INTERPRETATION_GUIDE.md`
+4. `artifact/CLAIM_TO_EVIDENCE.md`
+5. `artifact/KNOWN_LIMITATIONS.md`
+6. `artifact/LIVE_RERUN_GUIDE.md`
 
-This artifact is a **reviewer-verifiable claim-audit package**: it lets reviewers
-trace each paper claim to cached results, regeneration scripts, provenance
-checks, information-access disclosures, and explicit non-claims.
+For deeper inspection, start with `artifact/PROJECT_GUIDE_FOR_REVIEWERS.md`.
+
+## Safety And Data Release
+
+Generated Python code should be treated as untrusted. The reviewer quickstart does not execute generated code. Run live execution-based scripts only in an isolated environment with appropriate resource limits and no sensitive credentials.
+
+Large upstream-derived benchmark data and tests are externalized from the direct review zip. Public release follows `artifact/DATA_RELEASE_POLICY.md`: upstream benchmark data or tests are redistributed only when permission is verified; otherwise the artifact provides preparation scripts, metadata, hashes, cached outputs, and expected layout.

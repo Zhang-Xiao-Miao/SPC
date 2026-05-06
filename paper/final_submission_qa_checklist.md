@@ -27,7 +27,7 @@ This checklist records the current final-stage checks for the NeurIPS 2026 E&D s
 - `artifact/reproduce_main.sh` regenerates paper-facing tables and figure-support files from cached outputs.
 - `artifact/verify_provenance.sh` checks prompt-only matcher constants, query-side access boundaries, stored `structure_fidelity` fields, and prior-quality response regeneration.
 - The canonical anonymous package excludes historical planning drafts, reviewer-attack notes, rebuttal prewrites, and old worklogs.
-- The package includes the official `paper/latex/neurips_2026.sty` file required by the current LaTeX source.
+- The package includes the official `neurips2026_ed_latex_source_FINAL_v2/neurips_2026.sty` file required by the current LaTeX source.
 - The package includes `paper/contribution_and_artifact_summary.md` and `artifact/VERIFICATION_LOG_2026-04-29.md` as reviewer navigation aids.
 - The package includes `paper/tbl_backend_replicate_boundary.md`, `paper/tbl_backend_replicate_boundary.json`, and `paper/backend_replicate_boundary_notes.md` for Granite/StarCoder2 replicate-sensitive backend checks.
 - The package includes reusable reporting resources: `artifact/STRUCTURAL_PRIOR_AUDIT_TEMPLATE.md`, `artifact/INFORMATION_ACCESS_CARD.md`, `artifact/CLAIM_SURVIVAL_CARD.md`, `artifact/CANONICAL_REVIEWER_PACKAGE.md`, and `artifact/CONTROLLED_DEGRADATION_PROTOCOL.md`.
